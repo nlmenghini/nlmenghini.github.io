@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <customHeaders>
-		  <add name="Content-Security-Policy" value="default-src 'self' http://nicholasmenghini.com; script-src * 'self' 'unsafe-inline' http://nicholasmenghini.com .typekit.net .amazonaws.com; style-src * 'self' 'unsafe-inline' http://nicholasmenghini.com .typekit.net .amazonaws.com; img-src * 'self' data: http://nicholasmenghini.com .amazonaws.com; font-src * 'self' data: http://nicholasmenghini.com .typekit.net; connect-src 'self' http://nicholasmenghini.com; media-src 'self' http://nicholasmenghini.com; object-src 'self' http://nicholasmenghini.com; child-src 'self' player.vimeo.com http://nicholasmenghini.com; frame-ancestors 'self' http://nicholasmenghini.com; form-action 'self' http://nicholasmenghini.com; report-uri http://nicholasmenghini.com?wpcspReceiveCSPviol=1&wpCSPNonce=762635872f;"/>
+	  <customHeaders>
+		  <add name="Content-Security-Policy" value="default-src 'self' www.nicholasmenghini.com; script-src * 'self' 'unsafe-inline' http://nicholasmenghini.com .typekit.net .amazonaws.com; style-src * 'self' 'unsafe-inline' http://nicholasmenghini.com .typekit.net .amazonaws.com; img-src * 'self' data: http://nicholasmenghini.com .amazonaws.com; font-src * 'self' data: http://nicholasmenghini.com .typekit.net; connect-src 'self' http://nicholasmenghini.com; media-src 'self' http://nicholasmenghini.com; object-src 'self' http://nicholasmenghini.com; child-src 'self' player.vimeo.com http://nicholasmenghini.com; frame-ancestors 'self' http://nicholasmenghini.com; form-action 'self' http://nicholasmenghini.com; report-uri http://nicholasmenghini.com?wpcspReceiveCSPviol=1&wpCSPNonce=762635872f;"/>
 		</customHeaders>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
@@ -94,13 +94,13 @@
 						<li class="">
 							<a href="http://www.wookmark.com/profile/nl-menghini" target="_blank">Inspiration</a></li>
 						<li class="">
-							<a href="https://cottonbureau.com/people/nicholas-menghini" target="_blank">Shirts</a></li>	
+							<a href="https://cottonbureau.com/people/nicholas-menghini" target="_blank">Shirts</a></li>
 					</ul>
 				</nav>
 			</div>
 			</article>
 		</header>
-		
+
 		<article role="main">
 			<!-- /.section -->
 			<section class="section section--about" id="about">
@@ -196,7 +196,7 @@
 						    <p>
 						</form>
 					</div>
-					
+
 					<ul class="links">
 						<li class="links__item">
 							<a href="" target="_blank" class="links__link links__link--facebook">
@@ -254,9 +254,9 @@
 		<script src="build/scripts/jquery.mixitup.min.js"></script>
 		<script>
 			$(function(){
-			
+
 				// Instantiate MixItUp:
-			
+
 				$('#sandBox').mixItUp({
 					animation: {
 						duration: 600,
@@ -264,11 +264,11 @@
 						easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
 					}
 				});
-			
+
 			});
 
 			//background switcher
-			$(document).ready(function() {		 
+			$(document).ready(function() {
 			  var images = ['build/images/hex.jpg','build/images/triangle.jpg','build/images/square.jpg'];
 			  var newBackground = '';
 			  var lastBackground = '';
@@ -286,7 +286,7 @@
 				  localStorage.setItem('lastBackground',newBackground);
 				  console.log(newBackground);
 			  }
-			  			  
+
 			  //event listener: DOM ready
 			  function addLoadEvent(func) {
 			  	var oldonload = window.onload;
@@ -299,7 +299,7 @@
 			  		}
 			  	}
 			  }
-			  
+
 			  //call plugin function after DOM ready
 			  addLoadEvent(
 			  	outdatedBrowser({
@@ -309,7 +309,7 @@
 			  	})
 			  );
 			});
-			
+
 			//scroller
 			$("nav").find("a").click(function(e) {
 			    var section = $(this).attr("href");
