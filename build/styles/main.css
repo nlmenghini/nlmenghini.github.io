@@ -238,7 +238,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	z-index:1;
 }
 .header__intro hr{
-	width: 350px; 
+	width: 350px;
 	display: inline-block;
 	height: 1px;
 	border-top: 1px solid #ddd;
@@ -250,7 +250,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 
 .header__intro h1{
-	font-family:'milestoneregular',"abril-fatface", Helvetica Neue, Helvetica, sans-serif;
+	font-family:"futura-pt", Helvetica Neue, Helvetica, sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	margin-bottom: auto;
@@ -533,7 +533,7 @@ Works Navigation
 #sandBox .mix{
 	display: none;
 	margin-bottom: 0px;
-	
+
 }
 .sandbox {
   position: relative;
