@@ -26,7 +26,6 @@ html, body {
 	padding-right:15px;
 }
 body {
-	color: #141618;
 	padding: 9px 9px 0px 9px;
 }
 a {
@@ -245,6 +244,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	top:0;
 	width:100%;
 	z-index:1;
+	background: #666666
 }
 .header__intro hr{
 	width: 350px;
@@ -382,38 +382,26 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 
 /* ==========================================================================
-   Logo Container
-   ========================================================================== */
- .logo-container {
- 	width: 100%;
- 	display: block;
- 	-webkit-animation-delay: 1s;
- 	-moz-animation-delay: 1s;
- 	-ms-animation-delay: 1s;
- 	animation-delay: 2s;
- 	-webkit-animation-duration: 2s;
- 	animation-duration: 2s;
- 	z-index: -1;
- }
- .logo-wrap {
-	width: 80px;
-	height: 80px;
-	line-height:145px;
-	text-align: center;
-	cursor:pointer;
-}
-
-/* ==========================================================================
 Navigation
 ========================================================================== */
 .navigation{
-	position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-    padding: 15px 25px 10px 0px;
-    margin: 0px;
-    background: #141618;
+	position: fixed;
+	right: 0;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 2.12766%;
+  margin: 0px;
+  background: transparent;
+	transition: all .5s;
+}
+.top.navigation {
+  background: #141618;
+	padding-top: 9px;
+	padding-bottom: 0px;
+	height: 80px;
 }
 .navbar {
 	overflow: hidden;
@@ -463,6 +451,35 @@ Navigation
 	color: #777777;
 	padding: 0px;
 }
+
+/* ==========================================================================
+   Logo Container
+   ========================================================================== */
+ .logo-container {
+ 	width: 100%;
+ 	display: block;
+ 	-webkit-animation-delay: 1s;
+ 	-moz-animation-delay: 1s;
+ 	-ms-animation-delay: 1s;
+ 	animation-delay: 2s;
+ 	-webkit-animation-duration: 2s;
+ 	animation-duration: 2s;
+ 	z-index: -1;
+ }
+ .logo-wrap {
+	width: 80px;
+	height: 80px;
+	line-height:145px;
+	text-align: center;
+	cursor:pointer;
+	transition: all .5s;
+}
+.top.navigation .logo-wrap{
+	width: 60px;
+	height: 60px;
+	line-height: 115px;
+}
+
 
 /* ==========================================================================
    About Section

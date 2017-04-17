@@ -2,8 +2,7 @@
 <html lang="en">
 	<head>
 	    <customHeaders>
-		  <add name="Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self' typekit.net; media-src 'self' player.vimeo.com; form-action 'self';
-"/>
+		  <add name="Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self' typekit.net; media-src 'self' player.vimeo.com; form-action 'self';"/>
 		</customHeaders>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
@@ -19,6 +18,22 @@
 		<script src="iconic.min.js"></script>
 		<script>
 		  Simpla('r1aVF-vV');
+		</script>
+		<script>
+		function stickyMenu(el) {
+	  var top = window.pageYOffset || document.documentElement.scrollTop;
+		  if (top > 0) {
+		    if (el.className.indexOf('top') < 0) {
+		      el.className += ' top';
+		    }
+		  }
+			else {
+		    el.className = el.className.replace(' top', '');
+		  }
+		}
+		window.addEventListener("scroll", function() {
+		  stickyMenu(document.getElementsByClassName('navigation')[0])
+		});
 		</script>
 		<!-- CSS Files -->
 		<link rel="stylesheet" href="build/styles/kube.css">
@@ -258,9 +273,7 @@
 		<script src="build/scripts/jquery.mixitup.min.js"></script>
 		<script>
 			$(function(){
-
 				// Instantiate MixItUp:
-
 				$('#sandBox').mixItUp({
 					animation: {
 						duration: 600,
@@ -270,50 +283,6 @@
 				});
 
 			});
-
-			//background switcher
-			$(document).ready(function() {
-			  var images = ['build/images/hex.jpg','build/images/triangle.jpg','build/images/square.jpg'];
-			  var newBackground = '';
-			  var lastBackground = '';
-			  if(localStorage && localStorage.getItem('lastBackground')){
-				lastBackground = localStorage.getItem('lastBackground');
-				newBackground = images[Math.floor(Math.random() * images.length)];
-				while(newBackground == lastBackground) {
-				  newBackground = images[Math.floor(Math.random() * images.length)];
-				}
-				$('.header').css({'background-image': 'url(' + newBackground + ')'});
-				localStorage.setItem('lastBackground',newBackground);
-			  }else{
-				  newBackground = images[Math.floor(Math.random() * images.length)];
-				  $('.header').css({'background-image': 'url(' + newBackground + ')'});
-				  localStorage.setItem('lastBackground',newBackground);
-				  console.log(newBackground);
-			  }
-
-			  //event listener: DOM ready
-			  function addLoadEvent(func) {
-			  	var oldonload = window.onload;
-			  	if (typeof window.onload != 'function') {
-			  		window.onload = func;
-			  	} else {
-			  		window.onload = function() {
-			  			oldonload();
-			  			func();
-			  		}
-			  	}
-			  }
-
-			  //call plugin function after DOM ready
-			  addLoadEvent(
-			  	outdatedBrowser({
-			  		bgColor: '#f25648',
-			  		color: '#ffffff',
-			  		lowerThan: 'transform'
-			  	})
-			  );
-			});
-
 			//scroller
 			$("nav").find("a").click(function(e) {
 			    var section = $(this).attr("href");
@@ -323,5 +292,4 @@
 			});
 		</script>
 	</body>
-
 </html>

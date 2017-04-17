@@ -101,7 +101,7 @@
    ========================================================================== */
 
 @media (max-width: 768px) {
-	.navbar-right{
+	.navbar-right, .navbar-links{
 		display: none;
 	}
 	.worksnav{
@@ -161,7 +161,7 @@
 		margin-bottom:50px
 	}
 	.section--about {
-		padding:84px 0 88px
+		padding:84px 12px 88px
 	}
 	.section--links {
 		padding-bottom:61px
@@ -211,7 +211,7 @@
 		margin-bottom:30px
 	}
 	.section--about {
-		padding:56px 0 58px
+		padding:56px 12px 58px
 	}
 	.section--links {
 		padding-bottom:43px
