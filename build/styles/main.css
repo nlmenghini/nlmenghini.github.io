@@ -244,7 +244,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	top:0;
 	width:100%;
 	z-index:1;
-	background: #666666
 }
 .header__intro hr{
 	width: 350px;
@@ -390,11 +389,11 @@ Navigation
   top: 0px;
   width: 100%;
   z-index: 1;
-  padding-top: 12px;
+  padding-top: 21px;
 	padding-bottom: 12px;
 	padding-right: 2.12766%;
   margin: 0px;
-  background: transparent;
+  background: #141618;
 	transition: all .5s;
 }
 .top.navigation {
@@ -474,12 +473,17 @@ Navigation
 	cursor:pointer;
 	transition: all .5s;
 }
+.logo-wrap svg{
+	fill: white;
+}
 .top.navigation .logo-wrap{
 	width: 60px;
 	height: 60px;
 	line-height: 115px;
 }
-
+.top.navigation .logo-wrap svg{
+	fill: white;
+}
 
 /* ==========================================================================
    About Section
