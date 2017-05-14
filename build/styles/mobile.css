@@ -111,6 +111,9 @@
 	.logo-wrap {
 	margin: auto;
 	}
+	.navbar{
+		display: none;
+	}
 	.feed .feed__item {
 		width:50%;
 	}

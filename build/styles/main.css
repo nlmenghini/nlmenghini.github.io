@@ -401,6 +401,7 @@ Navigation
 	padding-top: 9px;
 	padding-bottom: 0px;
 	height: 80px;
+	transition: all .5s;
 }
 .navbar {
 	overflow: hidden;
@@ -803,4 +804,8 @@ textarea:valid + label:before {
     color: #01AFF0;
     border-color: #01AFF0;
     background: none;
+}
+
+.buttons.group{
+	display: flex;
 }
