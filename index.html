@@ -2,10 +2,7 @@
 <html lang="en">
 	<head>
 	    <customHeaders>
-			<add_header Content-Security-Policy "default-src https: data: 'unsafe-inline' 'unsafe-eval'" always;/>
-			<add_header X-Frame-Options "SAMEORIGIN" always;/>
-			<add_header X-Xss-Protection "1; mode=block" always;/>
-			<add_header X-Content-Type-Options "nosniff" always;/>
+		  <add name="Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests; reflected-xss block;"/>
 		</customHeaders>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
