@@ -2,7 +2,10 @@
 <html lang="en">
 	<head>
 	    <customHeaders>
-		  <add name="Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self' typekit.net; media-src 'self' player.vimeo.com; form-action 'self';"/>
+			<add_header Content-Security-Policy "default-src https: data: 'unsafe-inline' 'unsafe-eval'" always;
+			<add_header X-Frame-Options "SAMEORIGIN" always;>
+			<add_header X-Xss-Protection "1; mode=block" always;>
+			<add_header X-Content-Type-Options "nosniff" always;>
 		</customHeaders>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
@@ -13,11 +16,11 @@
 		<!-- Typekit -->
 		<script src="https://use.typekit.net/zoo2iqr.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-		<!--Simpla -->
-		<script src="https://app.simpla.io"></script>
-		<script src="iconic.min.js"></script>
+		<!-- Import Simpla library and cross-browser polyfill, and init project -->
+		<script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js"></script>
+		<script src="https://unpkg.com/simpla@^2.0.0"></script>
 		<script>
-		  Simpla('r1aVF-vV');
+    Simpla.init('r1aVF-vV');
 		</script>
 		<script>
 		function stickyMenu(el) {
