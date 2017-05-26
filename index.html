@@ -19,26 +19,9 @@
 		<script>
     Simpla.init('r1aVF-vV');
 		</script>
-		<script>
-		function stickyMenu(el) {
-	  var top = window.pageYOffset || document.documentElement.scrollTop;
-		  if (top > 0) {
-		    if (el.className.indexOf('top') < 0) {
-		      el.className += ' top';
-		    }
-		  }
-			else {
-		    el.className = el.className.replace(' top', '');
-		  }
-		}
-		window.addEventListener("scroll", function() {
-		  stickyMenu(document.getElementsByClassName('navigation')[0])
-		});
-		</script>
 		<!-- CSS Files -->
 		<link rel="stylesheet" href="build/styles/kube.css">
 		<link rel="stylesheet" href="build/styles/iconic-glyphs.css">
-		<link rel="stylesheet" href="build/styles/outdatedBrowser.min.css">
 		<link rel="stylesheet" href="build/styles/main.css">
 		<link rel="stylesheet" href="build/styles/milestone.css">
 		<link rel="stylesheet" href="build/styles/mobile.css">
@@ -139,6 +122,12 @@
 			</article>
 		</header>
 
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+		</div>
+
 		<article role="main">
 			<!-- /.section -->
 			<section class="section section--about" id="about">
@@ -168,7 +157,7 @@
 									SKILLS
 								</h3>
 								<p>
-									<strong>Print Design, Illustrator, Photoshop, Typography, Icon System Design, Mac platforms, Windows platforms, Layout design, Brand Development, Creative Direction, User Experience Design, User Interface Design, User Testing</strong>
+									<strong>User Experience Design, User Interface Design, User Testing, Icon System Design, Layout design, Brand Development & Logo Design, Creative Direction, Print Mediums</strong>
 								</p>
 								<div class="divider-h">
 									<span class="divider"></span>
@@ -219,38 +208,49 @@
 			<section class="section section--links" id="contact">
 				<div class="container">
 					<h1 class="section__title">Get in touch</h1>
-					<div class="col col-6 centered">
-						<form action="build/php/contact.php" method="post">
-						    <input required='' type="text" name="cf_name">
-						    <label alt='I will not use your name to sign up for things. Pinky swear.' placeholder='Name'></label>
-						    <input required='' type="text" name="cf_email">
-						    <label alt='I will not send chains letters to this e-mail. Scout’s Honor.' placeholder='E-mail'></label>
-						    <textarea required='' name="cf_message"></textarea>
-						    <label alt='  This is so cool. I never get mail. You’re Awesome!' placeholder=' Message'></label>
-						    <br>
-						    <p class="buttons group width-100">
-						    <input type="submit" class="button blue primary upper width-50" value="Send">
-						    <input type="reset" class="button blue primary outline upper width-50" value="Clear">
-						    <p>
-						</form>
-					</div>
-					<ul class="links">
-						<li class="links__item">
-							<a href="https://twitter.com/nl_menghini" target="_blank" class="links__link links__link--twitter">
-								<span aria-hidden="true" class="iconic iconic-social-twitter"></span>
-							</a>
-						</li>
-						<li class="links__item">
-							<a href="https://dribbble.com/nl_menghini" target="_blank" class="links__link links__link--dribbble">
-							<span aria-hidden="true" class="iconic iconic-social-dribbble"></span>
-							</a>
-						</li>
-						<li class="links__item">
-							<a href="https://www.instagram.com/nl_menghini/" target="_blank" class="links__link links__link--instagram">
-								<span aria-hidden="true" class="iconic iconic-social-instagram"></span>
-							</a>
-						</li>
-					</ul>
+						<div class="row">
+							<div class="col col-3 offset-2">
+								<p>
+									<a href="https://twitter.com/nl_menghini" target="_blank" class="links__link links__link--email">
+										<span aria-hidden="true" class="iconic iconic-envelope-open"></span>
+										<strong>nick.menghini</strong>@gmail.com
+									</a>
+								</p>
+								<p>
+									<a href="https://twitter.com/nl_menghini" target="_blank" class="links__link links__link--twitter">
+										<span aria-hidden="true" class="iconic iconic-social-twitter"></span>
+										twitter.com/<strong>nl_menghini</strong>
+									</a>
+								</p>
+								<p>
+									<a href="https://dribbble.com/nl_menghini" target="_blank" class="links__link links__link--dribbble">
+									<span aria-hidden="true" class="iconic iconic-social-dribbble"></span>
+									dribbble.com/<strong>nl_menghini</strong>
+									</a>
+								</p>
+								<p>
+									<a href="https://www.instagram.com/nl_menghini/" target="_blank" class="links__link links__link--instagram">
+										<span aria-hidden="true" class="iconic iconic-social-instagram"></span>
+										instagram.com/<strong>nl_menghini</strong>
+									</a>
+								</p>
+							</div>
+							<div class="col col-5 ">
+								<form action="build/php/contact.php" method="post">
+								    <input required='' type="text" name="cf_name">
+								    <label alt='I will not use your name to sign up for things. Pinky swear.' placeholder='Name'></label>
+								    <input required='' type="text" name="cf_email">
+								    <label alt='I will not send chains letters to this e-mail. Scout’s Honor.' placeholder='E-mail'></label>
+								    <textarea required='' name="cf_message"></textarea>
+								    <label alt='  This is so cool. I never get mail. You’re Awesome!' placeholder=' Message'></label>
+								    <br>
+								    <p class="buttons group width-100">
+								    <input type="submit" class="button blue primary upper width-50" value="Send Message">
+								    <input type="reset" class="button blue primary outline upper width-50" value="Clear">
+								    <p>
+								</form>
+							</div>
+						</div>
 				</div>
 				<!-- /.container -->
 			</section>
@@ -258,7 +258,7 @@
 		</article>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				<p class="footer__note footer__note--primary">© 2016 by
+				<p class="footer__note footer__note--primary">© 2017 by
 					<span class="footer__title">Nicholas Menghini. I just want to create cool stuff.</span>
 				</p>
 				<!-- /.footer__note -->
@@ -303,28 +303,6 @@
 				  localStorage.setItem('lastBackground',newBackground);
 				  console.log(newBackground);
 			  }
-
-			  //event listener: DOM ready
-			  function addLoadEvent(func) {
-			  	var oldonload = window.onload;
-			  	if (typeof window.onload != 'function') {
-			  		window.onload = func;
-			  	} else {
-			  		window.onload = function() {
-			  			oldonload();
-			  			func();
-			  		}
-			  	}
-			  }
-
-			  //call plugin function after DOM ready
-			  addLoadEvent(
-			  	outdatedBrowser({
-			  		bgColor: '#f25648',
-			  		color: '#ffffff',
-			  		lowerThan: 'transform'
-			  	})
-			  );
 			});
 			//scroller
 			$("nav").find("a").click(function(e) {
@@ -332,6 +310,27 @@
 			    $("html, body").animate({
 			        scrollTop: $(section).offset().top -80
 			    });
+			});
+			//stickyMenu
+			function stickyMenu(el) {
+		  var top = window.pageYOffset || document.documentElement.scrollTop;
+			  if (top > 0) {
+			    if (el.className.indexOf('top') < 0) {
+			      el.className += ' top';
+			    }
+			  }
+				else {
+			    el.className = el.className.replace(' top', '');
+			  }
+			}
+			window.addEventListener("scroll", function() {
+			  stickyMenu(document.getElementsByClassName('navigation')[0])
+			});
+			//loader fadeout
+			$(document).ready(function() {
+				setTimeout(function(){
+						$('body').addClass('loaded');
+				}, 3000);
 			});
 		</script>
 	</body>
