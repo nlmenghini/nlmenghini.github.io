@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="build/styles/kube.css">
 		<link rel="stylesheet" href="build/styles/iconic-glyphs.css">
 		<link rel="stylesheet" href="build/styles/main.css">
-		<link rel="stylesheet" href="build/styles/milestone.css">
+		<link rel="stylesheet" href="build/styles/hylia_font.css">
 		<link rel="stylesheet" href="build/styles/mobile.css">
 	</head>
 	<body onload="javascript:window_onload();">
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<article id="navbar" class="navbar_absolute">
-			<div class=" row navigation">
+			<div class=" row navigation gutters">
 				<div class="col col-2 logo-container animated fadeInDown">
 					<div class="logo-wrap filter" data-filter="all">
 						<svg version="1.1" id="logo-animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-235 -235 500 500" enable-background="new -235 -235 500 500" xml:space="preserve">
@@ -131,7 +131,7 @@
 		<article role="main">
 			<!-- /.section -->
 			<section class="section section--about" id="about">
-			<div class="row centered around">
+			<div class="row align-center around">
 				<div class="col col-5">
 					<h3 class="mg-md ">
 						ABOUT ME
@@ -174,7 +174,7 @@
 			<!-- /.section -->
 			<section class="section section--works" id="works">
 				<div class="worksnav">
-					<div class="row centered">
+					<div class="row align-center">
 						<li class="filter" data-filter="all">
 							<i aria-hidden="true" class="iconic" data-glyph="infinity"></i>All Work</li>
 						<li class="filter" data-filter=".category-1">
@@ -244,9 +244,9 @@
 								    <textarea required='' name="cf_message"></textarea>
 								    <label alt='  This is so cool. I never get mail. You’re Awesome!' placeholder=' Message'></label>
 								    <br>
-								    <p class="buttons group width-100">
-								    <input type="submit" class="button blue primary upper width-50" value="Send Message">
-								    <input type="reset" class="button blue primary outline upper width-50" value="Clear">
+								    <p class="buttons group w100">
+								    <input type="submit" class="button blue primary upper" value="Send Message">
+								    <input type="reset" class="button blue primary outline upper" value="Clear">
 								    <p>
 								</form>
 							</div>
@@ -332,6 +332,19 @@
 						$('body').addClass('loaded');
 				}, 3000);
 			});
+
+			$(function () {
+			  var $window = $(window)
+			  var $h1 = $('.header__intro h1')
+			  var $res = $('.res')
+			  var $size = $('.size')
+
+			  $window.on('resize', function (data) {
+			    $res.text($window.width())
+			    $size.text($h1.css('fontSize'))
+			  }).trigger('resize')
+
+			})
 		</script>
 	</body>
 </html>

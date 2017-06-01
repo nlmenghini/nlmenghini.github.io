@@ -234,7 +234,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .header__intro {
 	color:#fff;
 	display:table;
-	line-height: 80px;
 	font-size:2em;
 	font-weight:300;
 	height:100%;
@@ -257,8 +256,12 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 
 .header__intro h1{
-	margin-bottom: auto;
+	font-family: 'Hylia Serif Beta';
+	font-weight: normal;
+	margin-bottom: 12px;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	font-size: 35px;
+	line-height: .5em;
 }
 .header__intro, .header__scroll {
 	position:absolute;
@@ -279,6 +282,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .header__intro-inner .subheading{
 	font-weight: 700;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-top: 0px;
 }
 .header, .header__nav {
 	position:relative;
@@ -332,13 +336,13 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .links__link--email:hover {
 	color:#D74635;
 }
-.links__link--twitter:hover {
+.links__link--twitter:hover, .navbar li a.nav-twitter:hover {
 	color:#55acee;
 }
-.links__link--dribbble:hover {
+.links__link--dribbble:hover, .navbar li a.nav-dribbble:hover {
 	color:#ea4c89;
 }
-.links__link--instagram:hover {
+.links__link--instagram:hover, .navbar li a.nav-instagram:hover {
 	color:#3f729b;
 }
 .links__link--mail i[class*=" icon-"], .links__link--mail i[class^=icon-] {
@@ -386,18 +390,16 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
   top: 0px;
   width: 100%;
   z-index: 1;
-  padding-top: 21px;
-	padding-bottom: 12px;
+	padding-top: 9px;
+	padding-bottom: 0px;
+	height: 80px;
 	padding-right: 2.12766%;
   margin: 0px;
-  background: #141618;
+  background: rgba(20, 22, 24, 1.0);
 	transition: all .5s;
 }
 .top.navigation {
   background: #141618;
-	padding-top: 9px;
-	padding-bottom: 0px;
-	height: 80px;
 	transition: all .5s;
 }
 .navbar {
@@ -422,7 +424,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .navbar li {
 	cursor: pointer;
 	padding: 15px 10px;
-	color: #777777;
+	color: #fff;
 	float: left;
 	margin-left: 1.65em;
 	font-weight: 500;
@@ -431,11 +433,18 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	padding: 0px;
 }
 .navbar li a {
-	color: #777777;
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.0);
 }
-.navbar li a:hover, .navbar li [class^="iconic"]:hover{
-	color: #ffffff;
-	text-decoration:none;
+.navbar li a:hover{
+	transition: all .5s;
+	border-bottom: 1px solid rgba(255,255,255,1.0);
+	padding-bottom: 3px;
+}
+.navbar li.icon a:hover, .navbar li [class^="iconic"]:hover{
+	border: none;
+	padding: none;
+	text-decoration: none;
 }
 .navbar li active {
 	border-bottom: 1px solid #e5e6e6;
@@ -445,7 +454,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	margin: 0px 10px 0px 0px;
 	position: relative;
 	top: 3px;
-	color: #777777;
 	padding: 0px;
 }
 
@@ -453,7 +461,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
    Logo Container
    ========================================================================== */
  .logo-container {
- 	width: 100%;
  	display: block;
  	-webkit-animation-delay: 1s;
  	-moz-animation-delay: 1s;
@@ -464,9 +471,9 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
  	z-index: -1;
  }
  .logo-wrap {
-	width: 80px;
-	height: 80px;
-	line-height:145px;
+	width: 60px;
+ 	height: 60px;
+ 	line-height: 115px;
 	text-align: center;
 	cursor:pointer;
 	transition: all .5s;
@@ -474,15 +481,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .logo-wrap svg{
 	fill: white;
 }
-.top.navigation .logo-wrap{
-	width: 60px;
-	height: 60px;
-	line-height: 115px;
-}
-.top.navigation .logo-wrap svg{
-	fill: white;
-}
-
 /* ==========================================================================
    About Section
    ========================================================================== */
@@ -793,12 +791,14 @@ textarea:valid + label:before {
     background: #01AFF0;
     color: #fff;
 		font-weight: bold;
+		font-size: 11px;
 }
 .button.blue.outline, .button.blue.outline:disabled:hover, .button.blue.outline.disabled:hover {
     color: #01AFF0;
     border-color: #01AFF0;
     background: none;
 		font-weight: bold;
+		font-size: 11px;
 }
 .buttons.group{
 	display: flex;

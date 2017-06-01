@@ -1,27 +1,29 @@
 
 /* ==========================================================================
-   Max Width 2560px
+   Header stuff
    ========================================================================== */
 
-@media (max-width:2560px) {
-
-	h1 {
-		font-size: 3em;
-	}
-}
+	 @media (min-width: 576px) {
+	   .header__intro h1 {
+	     font-size: calc(5.20833vw + 5px);
+	   }
+	 }
+	 @media (min-width: 768px) {
+	   .header__intro h1 {
+	     font-size: calc(20.08929vw - 109.28571px);
+	   }
+	 }
+	 @media (min-width: 992px) {
+	   .header__intro h1 {
+	     font-size: 90px;
+	   }
+	 }
 
 /* ==========================================================================
    Max Width 1100px
    ========================================================================== */
 
 @media (max-width:1100px) {
-	.header__intro {
-		font-size:1.75em;
-		line-height: auto;
-	}
-	h1 {
-			font-size: 2em;
-		}
 	.footer .container {
 		padding-left:15px;
 		padding-right:15px
@@ -219,13 +221,15 @@
 	.section--links {
 		padding-bottom:43px
 	}
+	.section--links p{
+		text-align: center;
+	}
 	.links__item {
 		padding:4px;
 	}
 	.links__link {
 		height:2.75em;
 		line-height:2.75em;
-		width:2.75em
 	}
 	.links__link--linkedin i[class*=" icon-"], .links__link--linkedin i[class^=icon-] {
 		font-size:1.2em
