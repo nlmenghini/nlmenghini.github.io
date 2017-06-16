@@ -262,6 +262,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 	font-size: 35px;
 	line-height: .5em;
+	letter-spacing: -2px;
 }
 .header__intro, .header__scroll {
 	position:absolute;
