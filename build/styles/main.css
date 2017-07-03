@@ -532,6 +532,9 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	list-style: none;
 	text-align: center;
 }
+.worksnav .row{
+	justify-content: center;
+}
 .worksnav li {
 	cursor: pointer;
 	padding: 10px 10px;
@@ -539,8 +542,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	height: auto;
 	float: left;
 	margin-bottom: 1.65em;
-	margin-left: 3%;
-	width: 13.666666666666666%;
+	width: 10%;
 }
 .worksnav li active {
 	border-bottom: 1px solid #e5e6e6;
