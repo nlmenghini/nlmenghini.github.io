@@ -28,6 +28,10 @@
 		padding-left:15px;
 		padding-right:15px
 	}
+	.header__intro-inner svg{
+	 width: 100%;
+	 height: inherit;
+	}
 }
 
 /* ==========================================================================

@@ -31,33 +31,18 @@
 		<div class="header" ></div>
 			<div class="header__intro">
 				<div class="header__intro-inner">
-					<h1>Nicholas Menghini</h1>
+					<div class="header_name"></div>
+					<!-- <h1>Nicholas Menghini</h1> -->
 					<hr>
 					<h3 class="subheading">Designer in Austin, TX</h3>
 				</div>
 			</div>
 			<article id="navbar" class="navbar_absolute">
 			<div class=" row navigation gutters">
-				<div class="col col-2 logo-container animated fadeInDown">
-					<div class="logo-wrap filter" data-filter="all">
-						<svg version="1.1" id="logo-animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 500 420" style="enable-background:new 0 0 500 420;"
-							 xml:space="preserve">
-						<defs>
-						</defs>
-						<g>
-							<path d="M319.5,0h-2H198.8h-4.9h-2l1.4,1.4l4.9,4.9l5.3,5.3l5.3,5.3h0l4.9,4.9l84.7,84.7l4.9,4.9v0l5.3,5.3l3.8,3.8l6.4,6.4
-								l1.4,1.4v-2V0.8V0H319.5z M315.4,9.6v1.5v13.2v92.3l-6.1-6.1v-0.6v-0.6V11.1h-8.2h-90h-0.6h-0.6l0,0l-6.1-6.1h111.6V9.6z"/>
-							<path d="M316,232.9l-6.1-6.1L93.5,10.5l-6.1-6.1l-4.1-4.1L83,0h-0.3h-5.8h-8.7H0.8H0v0.8v4.1v2.7V17v4.9v60.8V83l0.2,0.2L237,320.1
-								l0.2,0.2h0.3h60.8h4.9h5.9h6.1h4.1h0.8v-0.8v-67.4v-8.7v-5.8v-0.3l-0.2-0.2L316,232.9z M315.4,248v67.4h-6.1v-0.4v-0.4v-10.7v-62
-								l-15.5-15.5L78.4,11.1H5.8H5.4H4.9V4.9h67.4H81l6.1,6.1l175,175l47.1,47.1l6.1,6.1V248z"/>
-							<path d="M1.4,193.3L0,191.8v128.5h128.5l-1.4-1.4L1.4,193.3z M107.9,315.4l-0.4-0.4l-0.4-0.4l-6.1-6.1L5.8,213.3l-0.4-0.4l0,0
-								l-0.4-0.4v-1.7v-7l111.6,111.6H107.9z"/>
-							<rect y="320.3" width="0" height="0"/>
-						</g>
-						</svg>
-					</div>
+				<div class="col col-2 logo-container">
+					<div class="logo-wrap" href="#navbar"></div>
 				</div>
-				<nav class="col col-8 navbar animated fadeInDown">
+				<nav class="col col-8 navbar">
 					<ul>
 						<li class="">
 							<a href="#about">About</a></li>
@@ -76,7 +61,7 @@
 								<a href="https://thenounproject.com/nl_menghini/" target="_blank">Icons</a></li>
 					</ul>
 				</nav>
-				<nav class="col col-2 navbar navrbar_right animated fadeInDown">
+				<nav class="col col-2 navbar navrbar_right">
 					<ul>
 						<li class="icon">
 							<a href="https://twitter.com/nl_menghini" target="_blank" class="nav-twitter">
@@ -101,8 +86,21 @@
 
 		<div id="loader-wrapper">
 			<div id="loader"></div>
-			<div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
+			<div class="loader-section section-left">
+			</div>
+      <div class="loader-section section-right">
+				<div id="frame" class="frame">
+					<div class="dot dot1"></div>
+					<br>
+					<div class="dot dot2"></div>
+					<div class="dot dot3"></div>
+					<br>
+					<div class="dot dot4"></div>
+					<div class="dot dot5"></div>
+					<br>
+					<div class="dot dot6"></div>
+				</div></div>
+			</div>
 		</div>
 
 		<article role="main">
@@ -308,6 +306,9 @@
 				setTimeout(function(){
 						$('body').addClass('loaded');
 				}, 3000);
+				setTimeout(function(){
+						document.getElementById('frame').className = 'frame hidden';
+				}, 2900);
 			});
 
 			$(function () {
