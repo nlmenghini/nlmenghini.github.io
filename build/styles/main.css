@@ -282,7 +282,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 .header__intro-inner .header_name{
 	background: url(../images/name.svg) no-repeat center bottom;
-	height: 130px;
+	height: 110px;
 }
 .header__intro-inner .subheading{
 	font-weight: 700;
