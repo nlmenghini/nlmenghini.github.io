@@ -16,7 +16,7 @@ html, body {
 	-moz-osx-font-smoothing:grayscale;
 	width: 100%;
 	height: 100%;
-	background: #141618;
+	background: #fff;
 }
 .container {
 	margin-left:auto;
@@ -26,7 +26,6 @@ html, body {
 	padding-right:15px;
 }
 body {
-	padding: 9px 9px 0px 9px;
 }
 a {
 	color:#3fa5ed;
@@ -208,7 +207,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	padding:19px 19px 16px;
 }
 .header {
-	background: no-repeat center center;
+	background: linear-gradient(to bottom, transparent 80%, white 100%), url("../images/hero_background.jpg") no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -397,14 +396,10 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
   z-index: 1;
 	padding-top: 9px;
 	padding-bottom: 0px;
-	height: 80px;
+	height: 60px;
 	padding-right: 2.12766%;
   margin: 0px;
-  background: rgba(20, 22, 24, 1.0);
-	transition: all .5s;
-}
-.top.navigation {
-  background: #141618;
+  background: rgba(20, 22, 24, 0.6);
 	transition: all .5s;
 }
 .navbar {

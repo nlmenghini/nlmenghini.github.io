@@ -22,13 +22,12 @@
 	</head>
 	<body onload="javascript:window_onload();">
 		<header class="header" role="banner" id="top">
-		<div class="header" ></div>
 			<div class="header__intro">
 				<div class="header__intro-inner">
 					<div class="header_name"></div>
-					<!-- <h1>Nicholas Menghini</h1> -->
+					<!-- <h1>Nichsdsdolas Menghini</h1> -->
 					<hr>
-					<h3 class="subheading">Designer in Austin, TX</h3>
+					<h3 class="subheading">Designer in Chicago, IL</h3>
 				</div>
 			</div>
 			<article id="navbar" class="navbar_absolute">
@@ -115,7 +114,7 @@
 									LOCATION
 								</h3>
 								<p>
-									<strong>Austin, TX</strong>
+									<strong>Chicago, IL</strong>
 								</p>
 								<div class="divider-h">
 									<span class="divider"></span>
@@ -252,25 +251,25 @@
 				});
 			});
 			//background switcher
-			$(document).ready(function() {
-			  var images = ['build/images/hex.jpg','build/images/triangle.jpg','build/images/square.jpg'];
-			  var newBackground = '';
-			  var lastBackground = '';
-			  if(localStorage && localStorage.getItem('lastBackground')){
-				lastBackground = localStorage.getItem('lastBackground');
-				newBackground = images[Math.floor(Math.random() * images.length)];
-				while(newBackground == lastBackground) {
-				  newBackground = images[Math.floor(Math.random() * images.length)];
-				}
-				$('.header').css({'background-image': 'url(' + newBackground + ')'});
-				localStorage.setItem('lastBackground',newBackground);
-			  }else{
-				  newBackground = images[Math.floor(Math.random() * images.length)];
-				  $('.header').css({'background-image': 'url(' + newBackground + ')'});
-				  localStorage.setItem('lastBackground',newBackground);
-				  console.log(newBackground);
-			  }
-			});
+			// $(document).ready(function() {
+			//   var images = ['build/images/hero_background.jpg'];
+			//   var newBackground = '';
+			//   var lastBackground = '';
+			//   if(localStorage && localStorage.getItem('lastBackground')){
+			// 	lastBackground = localStorage.getItem('lastBackground');
+			// 	newBackground = images[Math.floor(Math.random() * images.length)];
+			// 	while(newBackground == lastBackground) {
+			// 	  newBackground = images[Math.floor(Math.random() * images.length)];
+			// 	}
+			// 	$('.header').css({'background-image': 'url(' + newBackground + ')'});
+			// 	localStorage.setItem('lastBackground',newBackground);
+			//   }else{
+			// 	  newBackground = images[Math.floor(Math.random() * images.length)];
+			// 	  $('.header').css({'background-image': 'url(' + newBackground + ')'});
+			// 	  localStorage.setItem('lastBackground',newBackground);
+			// 	  console.log(newBackground);
+			//   }
+			// });
 			//scroller
 			$("nav").find("a").click(function(e) {
 			    var section = $(this).attr("href");
