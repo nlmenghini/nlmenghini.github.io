@@ -992,9 +992,6 @@ button,
     top: 1px;
     margin: 0 2px; }
 
-input[type="submit"] {
-  width: auto; }
-
 button:hover,
 .button:hover {
   outline: none;

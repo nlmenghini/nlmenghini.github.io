@@ -25,11 +25,11 @@
 			<div class="header__intro">
 				<div class="header__intro-inner">
 					<div class="header_name"></div>
-					<!-- <h1>Nichsdsdolas Menghini</h1> -->
-					<hr>
-					<h3 class="subheading">Designer in Chicago, IL</h3>
+					<!-- <h1>Nicholas Menghini</h1> -->
+					<!-- <h3 class="subheading">Designer in Chicago, IL</h3> -->
 				</div>
 			</div>
+			<div class="parallax"></div>
 			<article id="navbar" class="navbar_absolute">
 			<div class=" row navigation gutters">
 				<div class="col col-2 logo-container">
@@ -39,8 +39,8 @@
 					<ul>
 						<li class="">
 							<a href="#about">About</a></li>
-						<li class="">
-							<a href="#works">Work</a></li>
+						<!-- <li class="">
+							<a href="#works">Work</a></li>-->
 						<li class="">
 							<a href="#contact">Contact</a></li>
 						<li>|</li>
@@ -99,46 +99,42 @@
 		<article role="main">
 			<!-- /.section -->
 			<section class="section section--about" id="about">
-			<div class="row align-center around">
-				<div class="col col-5">
-					<h3 class="mg-md ">
-						ABOUT ME
-					</h3>
-						<proxy>
-							Designer. Lover of type. Citizen of the world, Student for life. Building great things at UrbanBound.<br><br>I am a passionate designer who enjoys exploring all creative graphic solutions for any design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid based sensibilities and a passion for typography. I also nerd out on icon systems and create them in my free time.<br><br>I spent my formative years living and traveling abroad; leading to adventures rooted in cultural exploration and experiencing different environments. It gives me a unique cultural perspective that I try to impart onto my design philosophy.
-						</proxy>
-					</p>
+				<div class="container">
+					<div class="row align-center around">
+						<div class="col col-5">
+							<h3 class="mg-md ">
+								About me
+							</h3>
+								<proxy>
+									Designer. Lover of type. Citizen of the world, Student for life. Building great things at UrbanBound.<br><br>I am a passionate designer who enjoys exploring all creative graphic solutions for any design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid based sensibilities and a passion for typography. I also nerd out on icon systems and create them in my free time.<br><br>I spent my formative years living and traveling abroad; leading to adventures rooted in cultural exploration and experiencing different environments. It gives me a unique cultural perspective that I try to impart onto my design philosophy.
+								</proxy>
+							</p>
+						</div>
+						<div class="col col-5">
+										<h3 class="mg-md">
+											Location
+										</h3>
+										<p>
+											Chicago, IL
+										</p>
+										<h3 class="mg-md">
+											Skills
+										</h3>
+										<p>
+											User Experience Design, User Interface Design, User Testing, Icon System Design, Layout design, Brand Development & Logo Design, Creative Direction, Print Mediums
+										</p>
+										<h3 class="mg-md">
+											Availability
+										</h3>
+										<p>
+											Available for Consulting
+										</p>
+						</div>
+					</div>
 				</div>
-				<div class="col col-5">
-								<h3 class="mg-md">
-									LOCATION
-								</h3>
-								<p>
-									<strong>Chicago, IL</strong>
-								</p>
-								<div class="divider-h">
-									<span class="divider"></span>
-								</div>
-								<h3 class="mg-md">
-									SKILLS
-								</h3>
-								<p>
-									<strong>User Experience Design, User Interface Design, User Testing, Icon System Design, Layout design, Brand Development & Logo Design, Creative Direction, Print Mediums</strong>
-								</p>
-								<div class="divider-h">
-									<span class="divider"></span>
-								</div>
-								<h3 class="mg-md">
-									AVAILABILITY
-								</h3>
-								<p>
-									<strong>Available for Consulting</strong>
-								</p>
-				</div>
-			</div>
 			</section>
-			<!-- /.section -->
-			<section class="section section--works" id="works">
+			<!-- work section -->
+			<!-- <section class="section section--works" id="works">
 				<div class="worksnav">
 					<div class="row">
 						<li class="filter" data-filter="all">
@@ -168,8 +164,7 @@
 						<div class="mix col col-3 category-2" data-value="12" style="display: inline-block;">Work Coming Soon</div>
 					</div>
 				</div>
-				<!-- /.container -->
-			</section>
+			</section> -->
 			<!-- /.section -->
 			<section class="section section--links" id="contact">
 				<div class="container">
@@ -210,9 +205,9 @@
 								    <textarea required='' name="cf_message"></textarea>
 								    <label alt='  This is so cool. I never get mail. You’re Awesome!' placeholder=' Message'></label>
 								    <br>
-								    <p class="buttons group w100">
-								    <input type="submit" class="button blue primary upper" value="Send Message">
-								    <input type="reset" class="button blue primary outline upper" value="Clear">
+								    <p class="buttons group">
+								    <input type="submit" class="button secondary small form w50" value="Send Message">
+								    <input type="reset" class="button secondary small form outline w50" value="Clear">
 								    <p>
 								</form>
 							</div>
@@ -224,7 +219,7 @@
 		</article>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				<p class="footer__note footer__note--primary">© 2017 by
+				<p class="footer__note footer__note--primary">© 2018 by
 					<span class="footer__title">Nicholas Menghini. I just want to create cool stuff.</span>
 				</p>
 				<!-- /.footer__note -->
@@ -270,7 +265,7 @@
 			// 	  console.log(newBackground);
 			//   }
 			// });
-			
+
 			//scroller
 			$("nav").find("a").click(function(e) {
 			    var section = $(this).attr("href");

@@ -45,18 +45,15 @@ img {
 Typography
 ========================================================================== */
 h1, h2, h3, h4, h5, h6, p {
-	color:#141618;
 	text-transform:none;
 }
-h1, h2, h3, h4 {
+h1, h2 {
 	font-family: "brandon-grotesque", "futura-pt", Helvetica Neue, Helvetica, sans-serif;
-}
-h5, h6, p {
-  font-family:"futura-pt", Helvetica Neue, Helvetica, sans-serif;
-}
-h1, h2{
 	font-style: normal;
 	font-weight: 900;
+}
+h3, h4, h5, h6, p {
+  font-family:"futura-pt", Helvetica Neue, Helvetica, sans-serif;
 }
 h3, h4{
 	font-style: normal;
@@ -162,9 +159,9 @@ input[type=email], input[type=text], textarea {
 	transition:all .3s;
 }
 input[type=email]:focus, input[type=text]:focus, textarea:focus {
-	border-color:#3fb0ff;
-	box-shadow:3px 3px 0 0 rgba(63, 176, 255, 1);
-	color:#3fb0ff;
+	border-color:#313439;
+	box-shadow:3px 3px 0 0 #313439;
+	color:#313439;
 }
 input[type=email].form--error, input[type=text].form--error, textarea.form--error {
 	border-color:#e65a5a;
@@ -207,11 +204,12 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	padding:19px 19px 16px;
 }
 .header {
-	background: linear-gradient(to bottom, transparent 80%, white 100%), url("../images/hero_background.jpg") no-repeat center bottom;
+	background: url("../images/hero_hiking.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	box-sizing:border-box;
 	height:100%;
 	width: 100%;
@@ -230,6 +228,18 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
   bottom: 0;
   left: 0;
 }
+
+.parallax {
+	background: url("../images/hero_hiking.png") no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
 .header__intro {
 	color:#fff;
 	display:table;
@@ -249,9 +259,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	border-top: 1px solid #ddd;
 	margin-bottom: auto;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.header__intro h1, h2, h3, h4, h5, h6, p{
-	color: #ffffff;
 }
 
 .header__intro h1{
@@ -280,15 +287,17 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	vertical-align:middle;
 }
 .header__intro-inner .header_name{
-	background: url(../images/name.svg) no-repeat center bottom;
-	height: 110px;
+	background: url(../images/name.svg) no-repeat center;
+	background-size: 60%;
+	background-attachment: fixed;
+  height: 800px;
 }
 .header__intro-inner .subheading{
 	font-weight: 700;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 	margin-top: 0px;
 	position: absolute;
-	top: 50%;
+	top: 48%;
   right: -60px;
   transform: rotate(-90deg);
 }
@@ -398,12 +407,17 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
   top: 0px;
   width: 100%;
   z-index: 1;
-	padding-top: 9px;
+	padding-top: 6px;
 	padding-bottom: 0px;
-	height: 60px;
+	height: 70px;
 	padding-right: 2.12766%;
   margin: 0px;
-  background: rgba(20, 22, 24, 0.6);
+  background: rgba(255, 255, 255, 0.0);
+	transition: all .5s;
+	z-index: 1;
+}
+.top.navigation {
+  background: rgba(255, 255, 255, 0.8);
 	transition: all .5s;
 }
 .navbar {
@@ -428,7 +442,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .navbar li {
 	cursor: pointer;
 	padding: 15px 10px;
-	color: #fff;
+	color: #000;
 	float: left;
 	margin-left: 1.65em;
 	font-weight: 500;
@@ -437,12 +451,12 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	padding: 0px;
 }
 .navbar li a {
-	color: #fff;
-	border-bottom: 1px solid rgba(255,255,255,0.0);
+	color: #000;
+	border-bottom: 1px solid rgba(0,0,0,0.0);
 }
 .navbar li a:hover{
 	transition: all .5s;
-	border-bottom: 1px solid rgba(255,255,255,1.0);
+	border-bottom: 1px solid rgba(0,0,0,1.0);
 	padding-bottom: 3px;
 }
 .navbar li.icon a:hover, .navbar li [class^="iconic"]:hover{
@@ -451,7 +465,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	text-decoration: none;
 }
 .navbar li active {
-	border-bottom: 1px solid #e5e6e6;
+	border-bottom: 1px solid #000;
 }
 .navbar li [class^="iconic"] {
 	font-size: 16px;
@@ -466,6 +480,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
    ========================================================================== */
  .logo-container {
  	display: block;
+	margin-top: 5px;
  	-webkit-animation-delay: 1s;
  	-moz-animation-delay: 1s;
  	-ms-animation-delay: 1s;
@@ -475,30 +490,29 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
  	z-index: -1;
  }
  .logo-wrap {
-	width: 60px;
- 	height: 60px;
+	width: 50px;
+ 	height: 50px;
 	cursor:pointer;
 	background: url(../images/logo.svg);
 }
 .logo-wrap svg{
-	fill: white;
+	fill: black;
 }
 /* ==========================================================================
    About Section
    ========================================================================== */
 .section--about {
 	padding:75px 0 75px 0;
-	background: #ffffff;
+	background: #000000;
+	color: white;
 }
-.section--about h3{
-	font-size: 14px;
-	font-weight: 300;
-	color: rgba(0,0,0,.5);
+
+.section--about h1, h2, h3, h4, h5, h6, p {
+	color: white;
 }
 .section--about p{
 	line-height: 24px;
 	margin-bottom: 10px;
-	color: rgba(0,0,0,.5);
 }
 .mg-md{
 	margin-top: 10px;
@@ -512,13 +526,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 .about .about__text {
 	margin:0;
-}
-.divider-h {
-    padding: 20px 0;
-}
-.divider-h span {
-    display: block;
-    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 /* ==========================================================================
@@ -666,12 +673,12 @@ input[type='text']:hover {
 input[type='email']:focus, input[type='email']:active,
 input[type='text']:focus,
 input[type='text']:active {
-  border: 1px solid #01AFF0;
+  border: 1px solid #313439;
 }
 input[type='email']:focus + label:before, input[type='email']:active + label:before,
 input[type='text']:focus + label:before,
 input[type='text']:active + label:before {
-  color: #01AFF0;
+  color: #313439;
 }
 input[type='email'] + label,
 input[type='text'] + label {
@@ -716,12 +723,12 @@ input[type='text']:valid + label:before {
 }
 input[type='email']:valid,
 input[type='text']:valid {
-  border: 1px solid #01AFF0;
+  border: 1px solid #313439;
 }
 input[type='email']:valid + label:before,
 input[type='text']:valid + label:before {
   content: attr(alt);
-  color: #01AFF0;
+  color: #313439;
 }
 
 textarea {
@@ -741,10 +748,10 @@ textarea:hover {
   border: 1px solid #cccccc;
 }
 textarea:focus, textarea:active {
-  border: 1px solid #01AFF0;
+  border: 1px solid #313439;
 }
 textarea:focus + label:before, textarea:active + label:before {
-  color: #01AFF0;
+  color: #313439;
 }
 textarea + label {
   display: block;
@@ -784,25 +791,24 @@ textarea:focus + label:before, textarea.active + label:before, textarea:valid + 
   transform: translateY(calc((-1em - 0.5em) - 0.5px)) scale(0.8, 0.8);
 }
 textarea:valid {
-  border: 1px solid #01AFF0;
+  border: 1px solid #313439;
 }
 textarea:valid + label:before {
   content: attr(alt);
-  color: #01AFF0;
+  color: #313439;
 }
 
-.button.blue {
-    background: #01AFF0;
+.button.form {
     color: #fff;
 		font-weight: bold;
-		font-size: 11px;
+		font-family: "futura-pt",helvetica,sans-serif;
+		font-style: normal;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+		border-radius: 3px 0 0 3px;
 }
-.button.blue.outline, .button.blue.outline:disabled:hover, .button.blue.outline.disabled:hover {
-    color: #01AFF0;
-    border-color: #01AFF0;
-    background: none;
-		font-weight: bold;
-		font-size: 11px;
+.button.form.outline{
+	border-radius: 0 3px 3px 0;
 }
 .buttons.group{
 	display: flex;
