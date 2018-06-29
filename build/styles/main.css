@@ -414,7 +414,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
   margin: 0px;
   background: rgba(255, 255, 255, 0.0);
 	transition: all .5s;
-	z-index: 1;
+	z-index: 2;
 }
 .top.navigation {
   background: rgba(255, 255, 255, 0.8);
