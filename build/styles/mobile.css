@@ -32,6 +32,10 @@
 	 width: 100%;
 	 height: inherit;
 	}
+
+	.navbar li {
+		margin-left: .5em;
+	}
 }
 
 /* ==========================================================================
@@ -107,6 +111,9 @@
    ========================================================================== */
 
 @media (max-width: 768px) {
+	.navigation {
+		padding-right: 0;
+	}
 	.navbar-right, .navbar-links{
 		display: none;
 	}
