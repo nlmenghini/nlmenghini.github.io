@@ -204,7 +204,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	padding:19px 19px 16px;
 }
 .header {
-	background: url("../images/hero_hiking.jpg") no-repeat center top;
+	background: url("../images/forest_background.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -230,7 +230,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 
 .parallax {
-	background: url("../images/hero_hiking.png") no-repeat center top;
+	background: url("../images/forest_background.png") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -288,7 +288,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 .header__intro-inner .header_name{
 	background: url(../images/name.svg) no-repeat center;
-	background-size: 60%;
+	background-size: 40%;
 	background-attachment: fixed;
   height: 800px;
 }
@@ -503,7 +503,7 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
    ========================================================================== */
 .section--about {
 	padding:75px 0 75px 0;
-	background: #000000;
+	background: #000405;
 	color: white;
 	position: relative;
   z-index: 1;

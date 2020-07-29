@@ -32,7 +32,9 @@
 	 width: 100%;
 	 height: inherit;
 	}
-
+	.header__intro-inner .header_name {
+		background-size: 60%;
+	}
 	.navbar li {
 		margin-left: .5em;
 	}
