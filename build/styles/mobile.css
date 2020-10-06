@@ -103,7 +103,7 @@
 	.sandbox .mix:before {
 	  content: '';
 	  display: inline-block;
-	  padding-top: 100%;
+	  /* padding-top: 100%; */
 	  vertical-align: middle;
 	}
 }
