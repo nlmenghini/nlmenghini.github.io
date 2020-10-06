@@ -319,7 +319,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 }
 .section--links {
 	padding-bottom:102px;
-	background: white;
 }
 .section--hidden {
 	display:none;
