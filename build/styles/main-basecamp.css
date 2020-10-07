@@ -1,4 +1,45 @@
-@charset"UTF-8";
+@charset "UTF-8";
+@font-face {
+    font-family: 'silkaregular';
+    src: url('../fonts/silka-regular-webfont.eot');
+    src: url('../fonts/silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/silka-regular-webfont.woff2') format('woff2'),
+         url('../fonts/silka-regular-webfont.woff') format('woff'),
+         url('../fonts/silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'silkaregular_italic';
+    src: url('../fonts/silka-regularitalic-webfont.eot');
+    src: url('../fonts/silka-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/silka-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/silka-regularitalic-webfont.woff') format('woff'),
+         url('../fonts/silka-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'silkasemibold';
+    src: url('../fonts/silka-semibold-webfont.eot');
+    src: url('../fonts/silka-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/silka-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/silka-semibold-webfont.woff') format('woff'),
+         url('../fonts/silka-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'geomanistbold';
+    src: url('../fonts/geomanist-bold-webfont.eot');
+    src: url('../fonts/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geomanist-bold-webfont.woff2') format('woff2'),
+         url('../fonts/geomanist-bold-webfont.woff') format('woff'),
+         url('../fonts/geomanist-bold-webfont.ttf') format('truetype'),
+         url('../fonts/geomanist-bold-webfont.svg#geomanistregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
 	-ms-text-size-adjust:100%;
@@ -9,11 +50,6 @@ html {
 	box-sizing: inherit;
 }
 html, body {
-	font-family: "futura-pt",helvetica,sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
 	width: 100%;
 	height: 100%;
 	background: #f4f4f9;
@@ -26,8 +62,12 @@ html, body {
 	padding-right:15px;
 }
 body {
+	font-family: 'silkaregular', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+	line-height: 1.5;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
 	padding: 20px 20px 20px;
-
 }
 a {
 	color:#3fa5ed;
@@ -46,25 +86,30 @@ img {
 /* ==========================================================================
 Typography
 ========================================================================== */
-h1, h2, h3, h4, h5, h6, p {
-	font-family: "futura-pt", Helvetica Neue, Helvetica, sans-serif;
-	text-transform:none;
-	color: #000405;
-	font-style: normal;
-
+h1, h2, h3, h4{
+	font-family: 'geomanistbold', "futura-pt", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.01em;
 }
-h1, h2, h3 {
-	font-weight: 900;
+h5, h6{
+	font-family: 'silkasemibold', "futura-pt", Helvetica, Arial, sans-serif;
 }
-h4, h5, h6, p{
-	font-weight: 400;
+.giga-header {
+    font-size: 64px;
+    line-height: 1;
+}
+.text-large {
+    font-size: 21px;
+	line-height: 1.5;
+	color: #70797c;
 }
 p{
 	margin-bottom: 0;
 }
-
 .oblique{
-	font-style: oblique;
+	font-family: 'silkaregular_italic';
 	color: #70797c;
 }
 /* ==========================================================================*/
@@ -254,10 +299,10 @@ p{
    Works Navigation
    ========================================================================== */
 .worksnav {
+	font-family: 'silkasemibold', "futura-pt", Helvetica, Arial, sans-serif;
 	width: 100%;
 	overflow: hidden;
 	font-size: 16px;
-	font-weight: 600;
 	list-style: none;
 	text-align: center;
 }
@@ -266,11 +311,20 @@ p{
 }
 .worksnav li {
 	cursor: pointer;
-	margin-bottom: 50px;
+	margin: 0 10px 50px;
 	width: 10%;
+	border-bottom: 1px solid rgba(0,0,0,0.0);
 }
-.worksnav li active {
-	border-bottom: 1px solid #e5e6e6;
+.worksnav li:hover{
+	transition: all .5s;
+	border-bottom: 1px solid rgba(0,0,0,1.0);
+	padding-bottom: 3px;
+	margin-bottom: 47px;
+}
+.worksnav li.active {
+	padding-bottom: 3px;
+	margin-bottom: 47px;
+	border-bottom: 1px solid #141618;
 }
 .worksnav li [class^="iconic"] {
 	font-size: 16px;
@@ -292,7 +346,6 @@ p{
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  font-weight: 700;
 }
 .sandbox .mix {
   -webkit-transform-style: preserve-3d;

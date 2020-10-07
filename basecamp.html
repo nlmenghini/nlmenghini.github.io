@@ -28,7 +28,7 @@
 			</div>
 		</article>
 
-		<div id="loader-wrapper">
+		<!-- <div id="loader-wrapper">
 			<div id="loader"></div>
 			<div class="loader-section section-left">
 			</div>
@@ -45,7 +45,7 @@
 					<div class="dot dot6"></div>
 				</div></div>
 			</div>
-		</div>
+		</div> -->
 
 		<article role="main">
 			<section class="section section--about" id="about">
@@ -53,12 +53,12 @@
 					<div class="row align-center">
 						<div class="col col-12">
 							<div class="picture"></div>
-							<h1>
+							<h1 class="giga-header">
 								My name is Nicholas Menghini
 							</h1>
-							<h4>
+							<p class="text-large">
 								I’m the Senior Visual & UI Designer building great things at UrbanBound.</br>Lover of type. Citizen of the world. Student for life.
-							</h4>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -122,12 +122,14 @@
 								<p>My father loves quotes and this was one he liked to repeat often. I think it’s a good reminder to slow down each day. Truly appreciate what you have. In an age were media consumption happens so fast it’s easy to see nothing but sad of depressing news and lose sight that there is still plenty good.</p>
 							</div>
 
-							<div class="mix portfolio col col-4 category-2" data-value="8" style="display: inline-block;">Work Coming Soon</div>
-							<div class="mix portfolio col col-4 category-2" data-value="9" style="display: inline-block;">Work Coming Soon</div>
-							<div class="mix portfolio col col-4 category-2" data-value="10" style="display: inline-block;">Work Coming Soon</div>
-							<div class="mix portfolio col col-4 category-2" data-value="11" style="display: inline-block;">Work Coming Soon</div>
+							<div class="mix portfolio col col-4 category-2" data-value="8" style="display: inline-block;"><button data-component="modal" data-target="#timeline-modal">Employee Timeline</button></div>
+							<div class="mix portfolio col col-4 category-2" data-value="9" style="display: inline-block;">Employer Reporting</div>
+							<div class="mix portfolio col col-4 category-2" data-value="10" style="display: inline-block;">Relocation Plan (Employee, RC, Employer)</div>
+							
+							<div class="mix portfolio col col-4 category-2" data-value="11" style="display: inline-block;">OLMS System</div>
 							<div class="mix portfolio col col-4 category-2" data-value="12" style="display: inline-block;">Work Coming Soon</div>
 							<div class="mix portfolio col col-4 category-2" data-value="13" style="display: inline-block;">Work Coming Soon</div>
+
 							<div class="mix portfolio col col-4 category-2" data-value="14" style="display: inline-block;">Work Coming Soon</div>
 							<div class="mix portfolio col col-4 category-2" data-value="15" style="display: inline-block;">Work Coming Soon</div>
 							<div class="mix portfolio col col-4 category-2" data-value="16" style="display: inline-block;">Work Coming Soon</div>
@@ -182,6 +184,15 @@
 						</div>
 					</div>
 				</div>
+
+				<div id="timeline-modal" class="modal-box hide">
+					<div class="modal">
+						<span class="close"></span>
+						<div class="modal-header">Employee Timeline</div>
+						<div class="modal-body">...</div>
+					</div>
+				</div>
+
 			</section>
 		</article>
 		<footer class="footer" role="contentinfo">
@@ -193,10 +204,10 @@
 					</p>
 			</div>
 		</footer>
-		<script src="build/scripts/vendor.js"></script>
-		<script src="build/scripts/portfolio.js"></script>
 		<script src="build/scripts/jquery.js"></script>
+		<script src="build/scripts/kube.min.js"></script>
 		<script src="build/scripts/modernizr.js"></script>
+		<script src="build/scripts/iconic.min.js"></script>
 		<script src="build/scripts/jquery.mixitup.min.js"></script>
 		<script>
 			$(function(){
@@ -226,7 +237,7 @@
 						$('body').addClass('loaded');
 				}, 3000);
 				setTimeout(function(){
-						document.getElementById('frame').className = 'frame hidden';
+						document.getElementById('frame').class = 'frame hidden';
 				}, 2900);
 			});
 
@@ -240,7 +251,6 @@
 			    $res.text($window.width())
 			    $size.text($h1.css('fontSize'))
 			  }).trigger('resize')
-
 			})
 		</script>
 	</body>
