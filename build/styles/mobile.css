@@ -101,7 +101,6 @@
 
 @media (min-width: 768px) {
 	.sandbox .mix:before {
-	  content: '';
 	  display: inline-block;
 	  /* padding-top: 100%; */
 	  vertical-align: middle;

@@ -506,7 +506,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 	position: relative;
   z-index: 1;
 }
-
 .section--about h1, h2, h3, h4, h5, h6, p {
 	color: white;
 }
@@ -527,7 +526,6 @@ input[type=email].form--error, input[type=text].form--error, textarea.form--erro
 .about .about__text {
 	margin:0;
 }
-
 /* ==========================================================================
    Works Navigation
    ========================================================================== */

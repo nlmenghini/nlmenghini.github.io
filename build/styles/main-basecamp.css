@@ -63,13 +63,9 @@ p{
 	margin-bottom: 0;
 }
 
-.subheader{
-	
-}
 .oblique{
 	font-style: oblique;
 	color: #70797c;
-	margin-top: 20px;
 }
 /* ==========================================================================*/
 .work {
@@ -245,6 +241,15 @@ p{
 .section--about {
 	padding:100px 0 50px 0;
 }
+.section--about .picture{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(../images/profile.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
 /* ==========================================================================
    Works Navigation
    ========================================================================== */
@@ -261,7 +266,7 @@ p{
 }
 .worksnav li {
 	cursor: pointer;
-	margin-bottom: 1.65em;
+	margin-bottom: 50px;
 	width: 10%;
 }
 .worksnav li active {
@@ -278,7 +283,6 @@ p{
    ========================================================================== */
 #sandBox .mix{
 	display: none;
-	margin-bottom: 0px;
 }
 .sandbox {
   position: relative;
@@ -302,13 +306,18 @@ p{
   -webkit-backface-visibility: hidden;
 }
 .sandbox .mix:before {
-  content: '';
-  display: inline-block;
-  /* padding-top: 50%; */
-  vertical-align: middle;
+    display: inline-block;
+    /* padding-top: 50%; */
+    vertical-align: middle;
 }
 .sandbox .introduction{
-	padding: 20px;
+	padding-bottom: 20px;
+}
+.sandbox .left{
+	padding-right: 10px;
+}
+.sandbox .right{
+	padding-left: 10px;
 }
 .sandbox .portfolio{
 	text-align: center;
@@ -316,7 +325,11 @@ p{
   	background: #000405;
 }
 .sandbox .portfolio:before{
+	content: '';
 	padding-top: 100%;
+}
+.sandbox .resume{
+	margin-bottom: 30px;
 }
 .sandbox .mix.category-1:after {
   background: #f4f4f9;
