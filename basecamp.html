@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="build/styles/kube.css">
 		<link rel="stylesheet" href="build/styles/iconic-glyphs.css">
 		<link rel="stylesheet" href="build/styles/main-basecamp.css">
+		<link rel="stylesheet" href="build/styles/lightbox.min.css">
 		<link rel="stylesheet" href="build/styles/mobile.css">
 	</head>
 	<body onload="javascript:window_onload();">
@@ -57,7 +58,7 @@
 								My name is Nicholas Menghini
 							</h1>
 							<p class="text-large">
-								I’m the Senior Visual & UI Designer building great things at UrbanBound.</br>Lover of type. Citizen of the world. Student for life.
+								I’m the Senior Visual & UX/UI Designer building great things at UrbanBound.</br>Lover of type. Citizen of the world. Student for life.
 							</p>
 						</div>
 					</div>
@@ -68,7 +69,7 @@
 					<div class="worksnav">
 						<div class="row">
 							<li class="filter" data-filter=".category-1">Introduction</li>
-							<li class="filter" data-filter=".category-2">Portfolio</li>
+							<li class="filter" data-filter=".category-2">Work</li>
 							<li class="filter" data-filter=".category-3">Resumé</li>
 						</div>
 					</div>
@@ -101,8 +102,9 @@
 							</div>
 							<div class="mix introduction right col col-6 category-1" data-value="6" style="display: inline-block;">
 								<h3>OK, so what are we getting?</h3>
-								<p>A Swiss army knife. Your application says you hire a product designer that can do it all. For years at UrbanBound I’ve been doing the bulk of UX, UI, and front end development. Throw in a good amount of QA and design for other areas of the 
-									business and you would get a designer that can do a great many things if you need him to.</p>
+								<p>A Swiss army knife. Your application says you hire a product designer that can do it all. For years at UrbanBound I’ve been doing the bulk of UX, UI, and front end development. Throw in a good amount of QA and design for other areas 
+									of the business and you would get a designer that can do a great many things if you need him to.</p>
+								<br/>
 								<p>You are also getting somebody who wants this job. I’m very happy at UrbanBound. I enjoy the people I work with across the company. I saw this 
 									posting and it excited all the parts of me that derive enjoyment from my current working environment. The opportunity to make change, to work with a great cast of people, to create and build clean, compelling, intuitive, designs. I 
 									think Basecamp is the opportunity to preserve everything I currently love about work and gain so much more.</p>
@@ -119,36 +121,32 @@
 									All designers want to make cool things but it’s not that cool if it isn’t very functional.</p>
 								</br>
 								<p class="oblique">"A day spent without the sight or sound of beauty, the contemplation of mystery, or the search of truth or perfection is a poverty-stricken day..."</br>~ Lewis Mumford</p>
-								<p>My father loves quotes and this was one he liked to repeat often. I think it’s a good reminder to slow down each day. Truly appreciate what you have. In an age were media consumption happens so fast it’s easy to see nothing but sad of depressing news and lose sight that there is still plenty good.</p>
+								<p>My father loves quotes and this was one he liked to repeat often. I think it’s a good reminder to slow down each day. Truly appreciate what you have. In an age were media consumption happens so fast it’s easy to focus on the unpleasant 
+									and lose sight that there is still plenty good.</p>
 							</div>
 
-							<div class="mix portfolio col col-4 category-2" data-value="8" style="display: inline-block;"><button data-component="modal" data-target="#timeline-modal">Employee Timeline</button></div>
-							<div class="mix portfolio col col-4 category-2" data-value="9" style="display: inline-block;">Employer Reporting</div>
-							<div class="mix portfolio col col-4 category-2" data-value="10" style="display: inline-block;">Relocation Plan (Employee, RC, Employer)</div>
+							<div class="mix portfolio col col-4 category-2" data-value="8" style="display: inline-block;" data-component="offcanvas" data-target="#timeline-offcanvas" data-direction="right"><img src="build/images/work/timeline_thumbnail.jpg"><h6 class="work-label">Employee Timeline</h6></div>
+							<div class="mix portfolio col col-4 category-2" data-value="9" style="display: inline-block;" data-component="offcanvas" data-target="#reporting-offcanvas" data-direction="right"><img src="build/images/work/reporting_thumbnail.png"><h6 class="work-label">Standardized Reporting</h6></div>
+							<div class="mix portfolio col col-4 category-2" data-value="10" style="display: inline-block;" data-component="offcanvas" data-target="#relo-plan-offcanvas" data-direction="right"><img src="build/images/work/relo_plan_thumbnail.png"><h6 class="work-label">Relocation Plan</h6></div>
+							<div class="mix portfolio col col-4 category-2" data-value="11" style="display: inline-block;" data-component="offcanvas" data-target="#rc-app-offcanvas" data-direction="right"><img src="build/images/work/rc_app_thumbnail.jpg"><h6 class="work-label">Relocation Consultant Application</h6></div>
+							<div class="mix portfolio col col-4 category-2" data-value="12" style="display: inline-block;" data-component="offcanvas" data-target="#olms-offcanvas" data-direction="right"><img src="build/images/work/olms_thumbnail.jpg"><h6 class="work-label">OLMS</h6></div>
+							<div class="mix portfolio col col-4 category-2" data-value="13" style="display: inline-block;" data-component="offcanvas" data-target="#cost-calc-offcanvas" data-direction="right"><img src="build/images/work/cost_calc_thumbnail.png"><h6 class="work-label">Employer Cost Calculator</h6></div>
 							
-							<div class="mix portfolio col col-4 category-2" data-value="11" style="display: inline-block;">OLMS System</div>
-							<div class="mix portfolio col col-4 category-2" data-value="12" style="display: inline-block;">Cost Calculator</div>
-							<div class="mix portfolio col col-4 category-2" data-value="13" style="display: inline-block;">Work Coming Soon</div>
-
-							<div class="mix portfolio col col-4 category-2" data-value="14" style="display: inline-block;">Work Coming Soon</div>
-							<div class="mix portfolio col col-4 category-2" data-value="15" style="display: inline-block;">Work Coming Soon</div>
-							<div class="mix portfolio col col-4 category-2" data-value="16" style="display: inline-block;">Work Coming Soon</div>
-
-							<div class="mix resume col col-12 category-3" data-value="17" style="display: inline-block;">
+							<div class="mix resume col col-12 category-3" data-value="14" style="display: inline-block;">
 								<h3>Skills</h3>
 								<p>Wizard with the core graphic design software such as Adobe Illustrator, InDesign, and Photoshop; prototyping tools Invision, Figma, Adobe XD; Apple OS and Windows 10. Web design proficiencies in HTML and CSS; 
 									a fast growing understanding of React; strong considerations for copy writing, accessibility, user experience, usability, user testing, layout, and best coding practices. Strong communication skills; verbal, 
 									visual, and written (hopefully not handwritten though). Other areas of experience or interest include icon system design, brand development, logo design, creative direction, the Oxford comma, and a variety of 
 									printed mediums (mostly an on going passion for t-shirt design).</p>
 							</div>
-							<div class="mix resume col col-12 category-3" data-value="18" style="display: inline-block;">
+							<div class="mix resume col col-12 category-3" data-value="15" style="display: inline-block;">
 								<h3>Education</h3>
 								<h5><strong>Oklahoma State University</strong></h5>
 								<p class="oblique">Bachelor of Fine Arts with concentration in Graphic Design [May 2012]</br>Minor in Marketing [May 2013]</p>
 								<p>Coursework: Graphic Design, Digital Design, Typography, Illustration, Drawing, Two-Dimensional Foundations, Three-Dimensional Foundations, Art History, Computer Science, including 30+ credit hours of Marketing 
 									course material.</p>
 							</div>
-							<div class="mix resume col col-12 category-3" data-value="19" style="display: inline-block;">
+							<div class="mix resume col col-12 category-3" data-value="16" style="display: inline-block;">
 								<h3>Experience</h3>
 								<h5><strong>UrbanBound</strong></h5>
 								<p>UrbanBound is the leading Relocation Management Software provider, empowering companies and their relocating employees to administer, track, and optimize the relocation experience.  As the principle designer at 
@@ -185,14 +183,268 @@
 					</div>
 				</div>
 
-				<div id="timeline-modal" class="modal-box hide">
-					<div class="modal">
-						<span class="close"></span>
-						<div class="modal-header">Employee Timeline</div>
-						<div class="modal-body">...</div>
+				<div id="timeline-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Employee Timeline</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">Every employee has a constumized timeline driven by their needs and policy.</p>
+							<p class="oblique image-counter">1/2</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/employee_timeline.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">The consultant can view and add tasks to an employee's timeline.</p>
+							<p class="oblique image-counter">2/2</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_edit_timeline.png">
+						</div>
 					</div>
 				</div>
 
+				<div id="reporting-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Standardized Reporting</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">1/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/reports_main.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">2/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/report_demo.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">The filtering needed to be advanced, yet familar, to solve employers exporting needs.</p>
+							<p class="oblique image-counter">3/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/filter_demo.png">
+						</div>
+					</div>
+				</div>
+
+				<div id="relo-plan-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Relocation Plan</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">The employee plan page; they can read notes from their consultant, review suppliers, and upload expenses.</p>
+							<p class="oblique image-counter">1/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/relo_plan_employee.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">The consultant plan page; they can leave notes, recommened suppliers, help the employee manage spend.</p>
+							<p class="oblique image-counter">2/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/relo_plan_rc.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">The employer plan page; they can review the move in progress and track spend.</p>
+							<p class="oblique image-counter">3/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/relo_plan_employer.png">
+						</div>
+					</div>
+				</div>
+
+				<div id="rc-app-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Relocation Consultant Application</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">1/5</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_app_tasks.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">2/5</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_app_tasks_notes.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">3/5</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_app_edit_plan.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">4/5</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_app_email_logging.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">Tasks can be create at a program level in teh event that a single task needs to be done by many employees.</p>
+							<p class="oblique image-counter">5/5</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/rc_app_program_tasks.png">
+						</div>
+					</div>
+				</div>
+
+				<div id="olms-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Order and Lead Management System</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+						<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">1/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/order_form.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">2/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/employee_order_view.png">
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">{Placeholder}</p>
+							<p class="oblique image-counter">3/3</p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/supplier_order_page.png">
+						</div>
+					</div>
+				</div>
+
+				<div id="cost-calc-offcanvas" class="hide">
+					<a href="#" class="close"></a>
+					<div class="row offcanvas-header">
+						<div class="col col-4">
+							<p class="oblique">URBANBOUND</p>
+							<h3>Cost Calculator</h3>
+						</div>
+						<div class="col col-4">
+							<p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. You really think you can fly that thing? Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with 
+								your own clever thoughts and ideas. Do you need a manager? </p>
+						</div>
+						<div class="col col-4">
+							<p>Just my luck, no ice. Do you have any idea how long it takes those cups to decompose. Just my luck, no ice. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Jaguar 
+								shark! So tell me - does it really exist? </p>
+						</div>
+					</div>
+					<div class="row offcanvas-image-row">
+						<div class="col col-4">
+							<p class="oblique image-label">A cost breakdown form for relocations that becomes more accurate as you provide more information.</p>
+							<p class="oblique image-label"><a href="https://www.figma.com/proto/eF9T8WNGWT73OeoPL6bIHO/Cost-Calculator?node-id=4%3A75&scaling=contain" target="_blank">Figma prototype</a></p>
+						</div>
+						<div class="col col-8">
+							<img src="build/images/work/cost_calc_form.png">
+							<!-- <a href="build/images/work/cost_calc_form.png" data-lightbox="cost-calculator" data-title="Cost calculator form"><img src="build/images/work/cost_calc_form.png"></a> -->
+						</div>
+					</div>
+				</div>
+				
 			</section>
 		</article>
 		<footer class="footer" role="contentinfo">
@@ -209,6 +461,7 @@
 		<script src="build/scripts/modernizr.js"></script>
 		<script src="build/scripts/iconic.min.js"></script>
 		<script src="build/scripts/jquery.mixitup.min.js"></script>
+		<script src="build/scripts/lightbox.min.js"></script>
 		<script>
 			$(function(){
 				// Instantiate MixItUp:
@@ -252,6 +505,8 @@
 			    $size.text($h1.css('fontSize'))
 			  }).trigger('resize')
 			})
+
+			$('#reporting-modal').modal('setWidth', '90%');
 		</script>
 	</body>
 </html>

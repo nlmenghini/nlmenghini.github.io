@@ -70,13 +70,10 @@ body {
 	padding: 20px 20px 20px;
 }
 a {
-	color:#3fa5ed;
+	color: #f03c69;
 	text-decoration:none;
 	-webkit-transition:background .5s, color .5s;
 	transition:background .5s, color .5s;
-}
-a:hover {
-	color:#1380cc;
 }
 img {
 	height:auto;
@@ -112,7 +109,6 @@ p{
 	font-family: 'silkaregular_italic';
 	color: #70797c;
 }
-/* ==========================================================================*/
 .work {
 	border:1px solid #e5e5e5;
 	border-radius:5px;
@@ -374,12 +370,23 @@ p{
 }
 .sandbox .portfolio{
 	text-align: center;
-	color: #f4f4f9;
-  	background: #000405;
+	margin: -5px;
+    padding: 10px;
+	cursor: pointer;
 }
-.sandbox .portfolio:before{
-	content: '';
-	padding-top: 100%;
+.sandbox .portfolio .work-label{
+	margin-top: 16px;
+}
+.sandbox .portfolio img{
+	border-radius: 4px;
+	margin:0px;
+	box-shadow: 0 2px 2px 0 rgba(56, 55, 55, 0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    -webkit-transition: margin .15s cubic-bezier(0.4,0,0.2,1),box-shadow .15s cubic-bezier(0.4,0,0.2,1);
+    transition: margin .15s cubic-bezier(0.4,0,0.2,1),box-shadow .15s cubic-bezier(0.4,0,0.2,1);
+}
+.sandbox .portfolio:hover img{
+    margin: -1% 0%;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
 }
 .sandbox .resume{
 	margin-bottom: 30px;
@@ -404,6 +411,40 @@ p{
 	animation-delay: 2s;
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
+}
+
+/* ==========================================================================
+	Offcanvas
+   ========================================================================== */
+.offcanvas .close {
+	top: 16px;
+	right: 16px;
+	font-size: 16px;
+}
+.offcanvas h3{
+	margin-top: 0px;
+}
+.offcanvas .offcanvas-header{
+    margin-top: 22px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.offcanvas .offcanvas-image-row{
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.offcanvas .image-label{
+	text-align: right;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.offcanvas .image-counter{
+	text-align: right;
+	color: #bbb;
+	margin-right: 20px;
+	font-size: 12px;
 }
 /* ==========================================================================
 	Loading aniamtion
