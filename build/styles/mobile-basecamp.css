@@ -166,13 +166,9 @@
 		width: 150px;
 		margin-bottom: 0px;
 	}
-	.sandbox .left{
-		padding-right: 0;
+	.offcanvas .copy{
+		column-count: 1;
 	}
-	.sandbox .right{
-		padding-left: 0;
-	}
-
 }
 
 /* ==========================================================================
