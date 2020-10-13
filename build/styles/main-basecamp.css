@@ -173,7 +173,7 @@ p{
 	background: url(../images/name.svg) no-repeat center;
 	background-size: 40%;
 	background-attachment: fixed;
-  height: 800px;
+  	height: 800px;
 }
 .header__intro-inner .subheading{
 	font-weight: 700;
@@ -181,8 +181,8 @@ p{
 	margin-top: 0px;
 	position: absolute;
 	top: 48%;
-  right: -60px;
-  transform: rotate(-90deg);
+  	right: -60px;
+  	transform: rotate(-90deg);
 }
 .header, .header__nav {
 	position:relative;
@@ -229,14 +229,13 @@ p{
    ========================================================================== */
 .navigation{
 	position: fixed;
-	right: 0;
+	left: 10px;
   	top: 0px;
-  	width: 100%;
   	z-index: 1;
 	padding-top: 6px;
 	padding-bottom: 0px;
 	height: 70px;
-	padding-right: 2.12766%;
+	padding-left: 2.12766%;
   	margin: 0px;
   	background:none;
 	transition: all .5s;
@@ -279,10 +278,10 @@ p{
 /* ==========================================================================
    About Section
    ========================================================================== */
-.section--about {
+.section--header {
 	padding:100px 0 50px 0;
 }
-.section--about .picture{
+.section--header .picture{
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
@@ -362,16 +361,68 @@ p{
 .sandbox .introduction{
 	padding-bottom: 20px;
 }
-.sandbox .left{
-	padding-right: 10px;
+.sandbox .introduction .you-are-here{
+	background-image: url(../images/you_are_here.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+    top: -35px;
+    left: -65px;
+	transform: rotate(20deg);
+	opacity: 0.5;
 }
-.sandbox .right{
-	padding-left: 10px;
+.sandbox .introduction .arrow-1{
+	background-image: url(../images/arrow_1.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120px;
+	opacity: 0.5;
+	position: relative;
+    left: -100px;
+    top: -40px;
+    margin-bottom: -95px;
+}
+.sandbox .introduction .arrow-2{
+	background-image: url(../images/arrow_2.svg);
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120px;
+	opacity: 0.5;
+	position: relative;
+    right: -40px;
+    top: -130px;
+    margin-bottom: -95px;
+    transform: rotate(25deg);
+}
+.sandbox .introduction .arrow-3{
+	background-image: url(../images/arrow_3.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120px;
+	opacity: 0.5;
+	position: relative;
+    top: -40px;
+    margin-bottom: -90px;
+}
+.sandbox .introduction .arrow-4{
+	background-image: url(../images/arrow_4.svg);
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120px;
+	opacity: 0.5;
+	position: relative;
+    top: -40px;
+    left: -70px;
+    margin-bottom: -90px;
 }
 .sandbox .portfolio{
 	text-align: center;
-	margin: -5px;
-    padding: 10px;
 	cursor: pointer;
 }
 .sandbox .portfolio .work-label{
@@ -424,8 +475,17 @@ p{
 .offcanvas h3{
 	margin-top: 0px;
 }
+.offcanvas .copy{
+	column-count: 2;
+}
+.offcanvas .copy p:first-child{
+	margin-top: 0px;
+}
+.offcanvas .copy p{
+	margin-top: 20px;
+}
 .offcanvas .offcanvas-header{
-    margin-top: 22px;
+	margin-top: 22px;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
     padding-top: 22px;
@@ -437,13 +497,11 @@ p{
 }
 .offcanvas .image-label{
 	text-align: right;
-	margin-right: 20px;
 	font-size: 14px;
 }
 .offcanvas .image-counter{
 	text-align: right;
 	color: #bbb;
-	margin-right: 20px;
 	font-size: 12px;
 }
 /* ==========================================================================
