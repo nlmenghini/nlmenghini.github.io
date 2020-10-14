@@ -40,7 +40,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 html {
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
@@ -80,9 +79,6 @@ img {
 	max-width:100%;
 	vertical-align:middle;
 }
-/* ==========================================================================
-Typography
-========================================================================== */
 h1, h2, h3, h4{
 	font-family: 'geomanistbold', "futura-pt", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -122,7 +118,6 @@ p{
   bottom: 0;
   left: 0;
 }
-
 .header__intro {
 	color:#fff;
 	display:table;
@@ -143,7 +138,6 @@ p{
 	margin-bottom: auto;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
 .header__intro h1{
 	font-family: 'Hylia Serif Beta';
 	font-weight: normal;
@@ -223,10 +217,6 @@ p{
 .footer__note--secondary {
 	float:right;
 }
-
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
 .navigation{
 	position: fixed;
 	left: 10px;
@@ -254,10 +244,6 @@ p{
 	margin: auto;
 	text-align: center;
 }
-
-/* ==========================================================================
-   Logo Container
-   ========================================================================== */
  .logo-container {
  	display: block;
 	margin-top: 5px;
@@ -275,9 +261,6 @@ p{
 	cursor:pointer;
 	background: url(../images/logo.svg);
 }
-/* ==========================================================================
-   About Section
-   ========================================================================== */
 .section--header {
 	padding:100px 0 50px 0;
 }
@@ -290,9 +273,6 @@ p{
 	background-repeat: no-repeat;
 	margin-bottom: 30px;
 }
-/* ==========================================================================
-   Works Navigation
-   ========================================================================== */
 .worksnav {
 	font-family: 'silkasemibold', "futura-pt", Helvetica, Arial, sans-serif;
 	width: 100%;
@@ -327,9 +307,6 @@ p{
 	position: relative;
 	top: 3px;
 }
-/* ==========================================================================
-   SandBox
-   ========================================================================== */
 #sandBox .mix{
 	display: none;
 }
@@ -355,7 +332,6 @@ p{
 }
 .sandbox .mix:before {
     display: inline-block;
-    /* padding-top: 50%; */
     vertical-align: middle;
 }
 .sandbox .introduction{
@@ -463,10 +439,6 @@ p{
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
 }
-
-/* ==========================================================================
-	Offcanvas
-   ========================================================================== */
 .offcanvas .close {
 	top: 16px;
 	right: 16px;
@@ -504,9 +476,6 @@ p{
 	color: #bbb;
 	font-size: 12px;
 }
-/* ==========================================================================
-	Loading aniamtion
-   ========================================================================== */
 #loader-wrapper {
    position: fixed;
    top: 0;
@@ -532,7 +501,6 @@ p{
 #loader-wrapper .loader-section.section-right {
    right: 0;
 }
-/* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
        -ms-transform: translateX(-100%);  /* IE 9 */
@@ -564,12 +532,9 @@ p{
    -webkit-transition: all 0.3s 1s ease-out;
            transition: all 0.3s 1s ease-out;
 }
-/* JavaScript Turned Off */
 .no-js #loader-wrapper {
    display: none;
 }
-
-
 .frame {
   height: 100px;
   width: 100px;
@@ -591,40 +556,32 @@ p{
   border-radius: 100%;
   display: inline-block;
 }
-
-
 .dot1 {
   margin-left: 40px;
   animation: loader_1 .6s infinite;
 }
-
 .dot2 {
   margin-left: 4px;
   animation: loader_2 .6s infinite;
 }
-
 .dot3 {
   margin-left: 50px;
   animation: loader_2 .6s infinite;
 }
-
 .dot4 {
   margin-left: 4px;
   margin-top: 20px;
   animation: loader_1 .6s infinite;
 }
-
 .dot5 {
   margin-left: 50px;
   margin-top: 20px;
   animation: loader_1 .6s infinite;
 }
-
 .dot6 {
   margin-left: 40px;
   animation: loader_2 .6s infinite;
 }
-
 @keyframes loader_1 {
   0%,100%   {
     transform: scale(.5);
@@ -636,7 +593,6 @@ p{
     opacity: 1;
   }
 }
-
 @keyframes loader_2 {
   0%,100%   {
     transform: scale(1);
