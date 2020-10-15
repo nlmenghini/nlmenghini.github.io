@@ -379,11 +379,11 @@ p{
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 120px;
+	height: 100px;
 	opacity: 0.5;
 	position: relative;
-    top: -40px;
-    margin-bottom: -90px;
+    top: -10px;
+    margin-bottom: -70px;
 }
 .sandbox .introduction .arrow-4{
 	background-image: url(../images/arrow_4.svg);
