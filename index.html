@@ -10,39 +10,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<!-- Typekit -->
 		<script src="https://use.typekit.net/zoo2iqr.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-		<!-- CSS Files -->
 		<link rel="stylesheet" href="build/styles/kube.css">
 		<link rel="stylesheet" href="build/styles/iconic-glyphs.css">
 		<link rel="stylesheet" href="build/styles/main.css">
 		<link rel="stylesheet" href="build/styles/mobile.css">
 	</head>
 	<body onload="javascript:window_onload();">
-		<header class="header" role="banner" id="top">
-			<div class="header__intro">
-				<div class="header__intro-inner">
-					<div class="header_name"></div>
-					<!-- <h1>Nicholas Menghini</h1> -->
-					<!-- <h3 class="subheading">Designer in College Park, MD</h3> -->
-				</div>
-			</div>
-			<div class="parallax"></div>
-			<article id="navbar" class="navbar_absolute">
+		<article id="navbar" class="navbar_absolute">
 			<div class=" row navigation gutters">
 				<div class="col col-2 logo-container">
 					<div class="logo-wrap" href="#navbar"></div>
 				</div>
 				<nav class="col col-8 navbar">
 					<ul>
-						<li class="">
-							<a href="#about">About</a></li>
-						<!-- <li class="">
-							<a href="#works">Work</a></li>-->
-						<li class="">
-							<a href="#contact">Contact</a></li>
-						<li>|</li>
 						<li class="">
 							<a href="https://500px.com/nl_menghini" target="_blank">Snapshots</a></li>
 						<li class="">
@@ -73,14 +55,13 @@
 					</ul>
 				</nav>
 			</div>
-			</article>
-		</header>
+		</article>
 
 		<div id="loader-wrapper">
 			<div id="loader"></div>
 			<div class="loader-section section-left">
 			</div>
-      <div class="loader-section section-right">
+      		<div class="loader-section section-right">
 				<div id="frame" class="frame">
 					<div class="dot dot1"></div>
 					<br>
@@ -95,176 +76,67 @@
 			</div>
 		</div>
 
-		<article role="main">
-			<!-- /.section -->
-			<section class="section section--about" id="about">
+		<article role="main" class="wrapper">
+			<section class="section section--header">
 				<div class="container">
-					<div class="row align-center around">
-						<div class="col col-5">
-							<h3 class="mg-md ">
-								About me
-							</h3>
-								<proxy>
-									Senior Visual & UI Designer. Lover of type. Citizen of the world, Student for life. Building great things at UrbanBound.<br><br>I am a passionate designer who enjoys exploring all creative graphic solutions for any design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid based sensibilities and a passion for typography. I also nerd out on icon systems and create them in my free time.<br><br>I spent my formative years living and traveling abroad; leading to adventures rooted in cultural exploration and experiencing different environments. It gives me a unique cultural perspective that I try to impart onto my design philosophy.
-								</proxy>
+					<div class="row align-center">
+						<div class="col col-12">
+							<div class="picture"></div>
+							<h1 class="giga-header">
+								My name is Nicholas Menghini
+							</h1>
+							<p class="text-large">
+								I’m the Senior Visual & UX/UI Designer building great things at UrbanBound.</br>Lover of type. Citizen of the world. Student for life.
 							</p>
-						</div>
-						<div class="col col-5">
-										<h3 class="mg-md">
-											Location
-										</h3>
-										<p>
-											College Park, MD
-										</p>
-										<h3 class="mg-md">
-											Skills
-										</h3>
-										<p>
-											User Experience Design, User Interface Design, User Testing, Icon System Design, Layout design, Brand Development & Logo Design, Creative Direction, Print Mediums
-										</p>
-										<h3 class="mg-md">
-											Availability
-										</h3>
-										<p>
-											Available for Consulting
-										</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- work section -->
-			<!-- <section class="section section--works" id="works">
-				<div class="worksnav">
-					<div class="row">
-						<li class="filter" data-filter="all">
-							<i aria-hidden="true" class="iconic" data-glyph="infinity"></i>All Work</li>
-						<li class="filter" data-filter=".category-1">
-							<i aria-hidden="true" class="iconic" data-glyph="cloud"></i>Web &amp; UI</li>
-						<li class="filter" data-filter=".category-2">
-							<i aria-hidden="true" class="iconic" data-glyph="tint"></i>Print</li>
-						<li class="sort filter active" data-sort="random" data-filter="all">
-							<i aria-hidden="true" class="iconic" data-glyph="ratio"></i>Random</li>
-					</div>
-				</div>
-				</div>
-				<div class="content-container animated fadeIn">
-					<div id="sandBox" class="sandbox row splice">
-						<div class="mix col col-3 category-1" data-value="1" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="2" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-1" data-value="3" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="4" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-1" data-value="5" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="6" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-1" data-value="7" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="8" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-1" data-value="9" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="10" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-1" data-value="11" style="display: inline-block;">Work Coming Soon</div>
-						<div class="mix col col-3 category-2" data-value="12" style="display: inline-block;">Work Coming Soon</div>
-					</div>
-				</div>
-			</section> -->
-			<!-- /.section -->
-			<section class="section section--links" id="contact">
+			<section class="section">
 				<div class="container">
-					<h1 class="section__title">Get in touch</h1>
-						<div class="row">
-							<div class="col col-3 offset-5">
+					<div class="content-container">
+						<div class="gutters row splice">
+							<div class="col col-6">
+								<h3>About me</h3>
+								<p>I am a passionate designer who enjoys exploring all creative graphic solutions for any design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid based sensibilities and a passion for 
+									typography. I also nerd out on icon systems and create them in my free time.</p><br/>
+								<p>I spent my formative years living and traveling abroad; leading to adventures rooted in cultural exploration and experiencing different environments. It gives me a unique cultural perspective that I try to impart 
+									onto my design philosophy.</p>
+							</div>
+							<div class="col col-6">
+								<h3>Skills</h3>
+								<p>User Experience Design, User Interface Design, User Testing, Icon System Design, Layout design, Brand Development & Logo Design, Creative Direction, Print Mediums</p>
+								<h3>Availability</h3>
+								<p>Available for Consulting</p>
+								<h3>Get in touch</h3>
 								<p>
 									<a href="https://twitter.com/nl_menghini" target="_blank" class="links__link links__link--email">
 										<span aria-hidden="true" class="iconic iconic-envelope-open"></span>
 										<strong>nick.menghini</strong>@gmail.com
 									</a>
 								</p>
-								<p>
-									<a href="https://twitter.com/nl_menghini" target="_blank" class="links__link links__link--twitter">
-										<span aria-hidden="true" class="iconic iconic-social-twitter"></span>
-										twitter.com/<strong>nl_menghini</strong>
-									</a>
-								</p>
-								<p>
-									<a href="https://dribbble.com/nl_menghini" target="_blank" class="links__link links__link--dribbble">
-									<span aria-hidden="true" class="iconic iconic-social-dribbble"></span>
-									dribbble.com/<strong>nl_menghini</strong>
-									</a>
-								</p>
-								<p>
-									<a href="https://www.instagram.com/nl_menghini/" target="_blank" class="links__link links__link--instagram">
-										<span aria-hidden="true" class="iconic iconic-social-instagram"></span>
-										instagram.com/<strong>nl_menghini</strong>
-									</a>
-								</p>
 							</div>
-							<!-- <div class="col col-5 ">
-								<form action="build/php/contact.php" method="post">
-								    <input required='' type="text" name="cf_name">
-								    <label alt='I will not use your name to sign up for things. Pinky swear.' placeholder='Name'></label>
-								    <input required='' type="text" name="cf_email">
-								    <label alt='I will not send chains letters to this e-mail. Scout’s Honor.' placeholder='E-mail'></label>
-								    <textarea required='' name="cf_message"></textarea>
-								    <label alt='  This is so cool. I never get mail. You’re Awesome!' placeholder=' Message'></label>
-								    <br>
-								    <p class="buttons group">
-								    <input type="submit" class="button secondary small form w50" value="Send Message">
-								    <input type="reset" class="button secondary small form outline w50" value="Clear">
-								    <p>
-								</form>
-							</div> -->
 						</div>
-				</div>
-				<!-- /.container -->
+					</div>
+				</div>			
 			</section>
-			<!-- /.section -->
+			<div class="push"></div>
 		</article>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				<p class="footer__note footer__note--primary">© 2020 by
-					<span class="footer__title">Nicholas Menghini. I like creating cool stuff.</span>
-				</p>
-				<!-- /.footer__note -->
-				<p class="footer__note footer__note--secondary">No animals were harmed in making of this site.</p>
-				<!-- /.footer__note -->
+					<p class="footer__note footer__note--primary">© 2020 by
+						<span class="footer__title">Nicholas Menghini. I like creating cool stuff.</span>
+					</p>
+					<p class="footer__note footer__note--secondary">No animals were harmed in making of this site.
+					</p>
 			</div>
-			<!-- /.container -->
 		</footer>
-		<!-- /.footer -->
 		<script src="build/scripts/jquery.js"></script>
 		<script src="build/scripts/kube.min.js"></script>
 		<script src="build/scripts/modernizr.js"></script>
 		<script src="build/scripts/iconic.min.js"></script>
 		<script src="build/scripts/jquery.mixitup.min.js"></script>
 		<script>
-			$(function(){
-				// Instantiate MixItUp:
-				$('#sandBox').mixItUp({
-					animation: {
-						duration: 600,
-						effects: 'fade translateZ(-360px) stagger(50ms) scale(1.00)',
-						easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
-					}
-				});
-			});
-			//background switcher
-			// $(document).ready(function() {
-			//   var images = ['build/images/hero_background.jpg'];
-			//   var newBackground = '';
-			//   var lastBackground = '';
-			//   if(localStorage && localStorage.getItem('lastBackground')){
-			// 	lastBackground = localStorage.getItem('lastBackground');
-			// 	newBackground = images[Math.floor(Math.random() * images.length)];
-			// 	while(newBackground == lastBackground) {
-			// 	  newBackground = images[Math.floor(Math.random() * images.length)];
-			// 	}
-			// 	$('.header').css({'background-image': 'url(' + newBackground + ')'});
-			// 	localStorage.setItem('lastBackground',newBackground);
-			//   }else{
-			// 	  newBackground = images[Math.floor(Math.random() * images.length)];
-			// 	  $('.header').css({'background-image': 'url(' + newBackground + ')'});
-			// 	  localStorage.setItem('lastBackground',newBackground);
-			// 	  console.log(newBackground);
-			//   }
-			// });
-
 			//scroller
 			$("nav").find("a").click(function(e) {
 			    var section = $(this).attr("href");
@@ -272,21 +144,7 @@
 			        scrollTop: $(section).offset().top -80
 			    });
 			});
-			//stickyMenu
-			function stickyMenu(el) {
-		  var top = window.pageYOffset || document.documentElement.scrollTop;
-			  if (top > 0) {
-			    if (el.className.indexOf('top') < 0) {
-			      el.className += ' top';
-			    }
-			  }
-				else {
-			    el.className = el.className.replace(' top', '');
-			  }
-			}
-			window.addEventListener("scroll", function() {
-			  stickyMenu(document.getElementsByClassName('navigation')[0])
-			});
+			
 			//loader fadeout
 			$(document).ready(function() {
 				setTimeout(function(){
@@ -307,8 +165,9 @@
 			    $res.text($window.width())
 			    $size.text($h1.css('fontSize'))
 			  }).trigger('resize')
-
 			})
+
+			$('#reporting-modal').modal('setWidth', '90%');
 		</script>
 	</body>
 </html>
