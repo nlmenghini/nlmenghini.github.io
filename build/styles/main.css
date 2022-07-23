@@ -73,6 +73,7 @@ a {
 	text-decoration:none;
 	-webkit-transition:background .5s, color .5s;
 	transition:background .5s, color .5s;
+	cursor: pointer;
 }
 img {
 	height:auto;
@@ -299,16 +300,16 @@ p{
 	left: 1px;
 }
 .links__link--email:hover {
-	color:#f03c69;
+	color:#f03c69 !important;
 }
 .links__link--twitter:hover, .navbar li a.nav-twitter:hover {
-	color:#55acee;
+	color:#55acee !important;
 }
 .links__link--dribbble:hover, .navbar li a.nav-dribbble:hover {
-	color:#ea4c89;
+	color:#ea4c89 !important;
 }
 .links__link--instagram:hover, .navbar li a.nav-instagram:hover {
-	color:#3f729b;
+	color:#3f729b !important;
 }
 .links__link--mail i[class*=" icon-"], .links__link--mail i[class^=icon-] {
 	font-size:2.1em;
@@ -385,7 +386,13 @@ p{
 	width: 50px;
  	height: 50px;
 	cursor:pointer;
-	background: url(../images/logo.svg);
+	/*background: url(../images/logo.svg);*/
+}
+.svg-background {
+	fill:#000405;
+}
+.svg-mark {
+	fill:#F4F4F9;
 }
 .section--header {
 	padding:100px 0 50px 0;
