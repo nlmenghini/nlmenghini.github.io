@@ -39,3 +39,10 @@ $('#2022').on('click', function() {
     $('.svg-background').css('fill', '#f4f4f9');
     $('.svg-mark').css('fill', '#6667AB');
 });
+
+$('#2023').on('click', function() {
+    $('html, body').css('background', '#BB2649');
+    $('h1,h2,h3,h4,h5,h6,p,a,text-large').css('color', '#f4f4f9');
+    $('.svg-background').css('fill', '#f4f4f9');
+    $('.svg-mark').css('fill', '#BB2649');
+});

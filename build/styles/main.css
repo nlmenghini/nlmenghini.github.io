@@ -237,7 +237,7 @@ p{
 }
 .navbar li a:hover{
 	transition: all .5s;
-	border-bottom: 1px solid rgba(0,0,0,1.0);
+	border-bottom: 1px solid rgba(0,0,0,0.9);
 	padding-bottom: 3px;
 }
 .navbar li.icon a:hover, .navbar li [class^="iconic"]:hover{
@@ -526,11 +526,11 @@ p{
 }
 
 .frame {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 41vh;
-  transform: scale(.6);
+	height: 0px;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 40vh;
+	transform: scale(.6);
 	z-index: 1000;
 	opacity: 1;
 	transition:opacity 500ms;
@@ -538,59 +538,91 @@ p{
 .frame.hidden{
 	opacity: 0;
 }
-
-.dot {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border-radius: 100%;
-  display: inline-block;
-}
-.dot1 {
-  margin-left: 40px;
-  animation: loader_1 .6s infinite;
-}
-.dot2 {
-  margin-left: 4px;
-  animation: loader_2 .6s infinite;
-}
-.dot3 {
-  margin-left: 50px;
-  animation: loader_2 .6s infinite;
-}
-.dot4 {
-  margin-left: 4px;
-  margin-top: 20px;
-  animation: loader_1 .6s infinite;
-}
-.dot5 {
-  margin-left: 50px;
-  margin-top: 20px;
-  animation: loader_1 .6s infinite;
-}
-.dot6 {
-  margin-left: 40px;
-  animation: loader_2 .6s infinite;
-}
-@keyframes loader_1 {
-  0%,100%   {
-    transform: scale(.5);
-    opacity: .7;
+.dot-totk {
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	border-radius: 100%;
+	display: inline-block;
+	position: absolute;
   }
-  50%  {
-    transform: scale(1);
-    box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
-    opacity: 1;
+  .totk-frame {
+	height: 0px;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 10vh;
+	transform: scale(.4);
+	display: block;
   }
-}
-@keyframes loader_2 {
-  0%,100%   {
-    transform: scale(1);
-    box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
-    opacity: 1;
+  .dot1-totk {
+	left: 40px;
+	animation: loader_1 .6s infinite;
   }
-  50%  {
-    transform: scale(.5);
-    opacity: .7;
+  .dot2-totk {
+	left: 15px;
+	top: 10px;
+	animation: loader_2 .6s infinite;
   }
-}
+  .dot3-totk {
+	right:15px;
+	top: 10px;
+	animation: loader_2 .6s infinite;
+  }
+  .dot4-totk {
+	left: 0px;
+	top:32.5px;
+	animation: loader_1 .6s infinite;
+  }
+  .dot5-totk {
+	right: 0px;
+	top:32.5px;
+	animation: loader_1 .6s infinite;
+  }
+  .dot6-totk {
+	left: 0px;
+	top:60px;
+	animation: loader_2 .6s infinite;
+  }
+  .dot7-totk {
+	right: 0px;
+	top:60px;
+	animation: loader_2 .6s infinite;
+  }
+  .dot8-totk {
+	left: 15px;
+	top:82.5px;
+	animation: loader_1 .6s infinite;
+  }
+  .dot9-totk {
+	right:15px;
+	top:82.5px;
+	animation: loader_1 .6s infinite;
+  }
+  .dot10-totk {
+	left: 40px;
+	top:92.5px;
+	animation: loader_2 .6s infinite;
+  }
+  
+  @keyframes loader_1 {
+	0%,100%   {
+	  transform: scale(.5);
+	  opacity: .7;
+	}
+	50%  {
+	  transform: scale(1);
+	  box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+	  opacity: 1;
+	}
+  }  
+  @keyframes loader_2 {
+	0%,100%   {
+	  transform: scale(1);
+	  box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+	  opacity: 1;
+	}
+	50%  {
+	  transform: scale(.5);
+	  opacity: .7;
+	}
+  }
