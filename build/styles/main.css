@@ -380,13 +380,14 @@ p{
 	width: 50px;
  	height: 50px;
 	cursor:pointer;
-	/*background: url(../images/logo.svg);*/
+	display: flex;
+	justify-content: center;
 }
-.svg-background {
-	fill:#000405;
+svg {
+	width: 35px;;
 }
 .svg-mark {
-	fill:#F4F4F9;
+	fill:#000405;
 }
 .section--header {
 	padding:100px 0 50px 0;
