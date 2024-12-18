@@ -39,3 +39,15 @@ $('#2023').on('click', function() {
     $('h1,h2,h3,h4,h5,h6,p,a,text-large').css('color', '#f4f4f9');
     $('.svg-mark').css('fill', '#f4f4f9');
 });
+
+$('#2024').on('click', function() {
+    $('html, body').css('background', '#FFBE98');
+    $('h1,h2,h3,h4,h5,h6,p,a,text-large').css('color', '#f4f4f9');
+    $('.svg-mark').css('fill', '#f4f4f9');
+});
+
+$('#2025').on('click', function() {
+    $('html, body').css('background', '#A47864');
+    $('h1,h2,h3,h4,h5,h6,p,a,text-large').css('color', '#f4f4f9');
+    $('.svg-mark').css('fill', '#f4f4f9');
+});
