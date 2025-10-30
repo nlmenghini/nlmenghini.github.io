@@ -2,228 +2,94 @@
 <html lang="en">
 
 <head>
-	<customHeaders>
-		<add name="Content-Security-Policy" value="default-src 'self';" />
-	</customHeaders>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta charset="UTF-8">
-	<title>Menghini Design</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<script src="https://use.typekit.net/zoo2iqr.js"></script>
-	<script>try { Typekit.load({ async: true }); } catch (e) { }</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="build/styles/kube.css">
-	<link rel="stylesheet" href="build/styles/iconic-glyphs.css">
-	<link rel="stylesheet" href="build/styles/main.css">
-	<link rel="stylesheet" href="build/styles/mobile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Menghini - Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body onload="javascript:window_onload();">
-	<article id="navbar" class="navbar_absolute">
-		<div class=" row navigation gutters">
-			<div class="col col-2 logo-container">
-				<div class="logo-wrap" onClick="refreshPage()">
-					<svg version="1.1" id="logo-animated" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 280 280"
-						xml:space="preserve">
-						<g class="svg-mark">
-							<path
-								d="m280,188.553V7.778c0-4.296-3.482-7.778-7.778-7.778h-48.222c-20.401,0-39.526,5.457-56,14.987-10.541,6.098-19.992,13.867-28,22.941-8.007-9.074-17.459-16.843-28-22.941C95.526,5.457,76.401,0,56,0H7.778C3.482,0,0,3.482,0,7.778v208.444c0,4.295,3.482,7.778,7.778,7.778h40.444c4.296,0,7.778-3.482,7.778-7.778V64.406c0-4.786,4.285-8.449,9.01-7.685,26.644,4.309,46.99,27.418,46.99,55.279v48.222c0,4.295,3.482,7.778,7.778,7.778h40.444c4.296,0,7.778-3.482,7.778-7.778v-48.222c0-29.525,22.849-53.713,51.829-55.847,2.252-.166,4.171,1.626,4.171,3.884v89.104c0,1.533-.906,2.91-2.299,3.549-45.837,21.024-78.366,66.066-81.459,119.02-.262,4.489,3.266,8.29,7.763,8.29h40.549c4.029,0,7.406-3.077,7.742-7.091,3.405-40.735,35.878-73.208,76.613-76.614,4.015-.335,7.091-3.713,7.091-7.742Z" />
-							<path
-								d="m276.111,224h0c-28.78,0-52.111,23.331-52.111,52.111h0c0,2.148,1.741,3.889,3.889,3.889h44.333c4.296,0,7.778-3.482,7.778-7.778v-44.333c0-2.147-1.741-3.889-3.889-3.889Z" />
-							<rect y="252" width="56" height="28" rx="10" ry="10" />
-						</g>
-					</svg>
-				</div>
-			</div>
-			<nav class="col col-8 navbar">
-				<ul>
-					<li class="">
-						<a href="https://www.instagram.com/nl_menghini/" target="_blank">Snapshots & Timelapses</a>
-					</li>
-					<li class="">
-						<a href="https://cottonbureau.com/people/nicholas-menghini" target="_blank">Threads</a>
-					</li>
-					<li class="">
-						<a href="https://thenounproject.com/nl_menghini/" target="_blank">Icons</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="col col-2 navbar navrbar_right">
-				<ul>
-					<li class="icon">
-						<a href="https://twitter.com/nl_menghini" target="_blank" class="nav-twitter">
-							<span aria-hidden="true" class="iconic iconic-social-twitter"></span>
-						</a>
-					</li>
-					<li class="icon">
-						<a href="https://dribbble.com/nl_menghini" target="_blank" class="nav-dribbble">
-							<span aria-hidden="true" class="iconic iconic-social-dribbble"></span>
-						</a>
-					</li>
-					<li class="icon">
-						<a href="https://www.instagram.com/nl_menghini/" target="_blank" class="nav-instagram">
-							<span aria-hidden="true" class="iconic iconic-social-instagram"></span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</article>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <svg class="logo" viewBox="0 0 97 50" onClick="refreshPage()">
+                    <path
+                        d="M58.2671 48.231C57.5812 47.8339 56.9314 47.4007 56.3177 46.8953C56.2094 46.787 56.065 46.7148 55.9567 46.6065C55.9206 46.6065 55.9206 46.5704 55.8845 46.5704C51.5163 43.0686 48.1588 36.7148 48.1588 36.7148C45.4874 32.13 43.1769 26.8592 41.0108 21.9134C36.1372 10.8303 31.9134 1.19134 25.3069 0.108304C24.8014 1.09741e-06 23.4296 0 23.4296 0H5.77617C5.77617 0 4.25993 1.09741e-06 3.89892 0.108304C1.66065 0.685922 0 3.2852 0 6.38989V49.0253C0 49.5307 0.433212 49.9639 0.938628 49.9639C1.44404 49.9639 1.87726 49.5307 1.87726 49.0253V6.38989C1.87726 3.93502 3.24909 1.84115 4.87364 1.84115H4.98195C7.68953 1.87725 10.0361 3.86281 12.2744 7.00361L13.5379 9.20578L14.6209 11.0469L15.7762 12.9964C15.8484 13.1408 15.9206 13.2852 15.9928 13.4296L16.6426 14.7653L17.509 16.6065L17.7256 17.0758C18.231 18.1588 18.7004 19.2419 19.2058 20.361V25.9567V38.9892V49.0614C19.2058 49.5668 19.639 50 20.1444 50C20.6498 50 21.083 49.5668 21.083 49.0614V24.6209C21.7329 26.1011 22.4188 27.5812 23.1047 29.0614C23.7906 30.5054 24.4765 31.9495 25.1625 33.3574L25.0903 33.2852C25.0903 33.2852 26.1011 35.5235 27.87 38.4476C29.7473 41.5884 32.5271 45.4513 35.8123 48.1949C35.8484 48.231 35.8845 48.2671 35.9206 48.2671H35.8845C36.6426 48.8448 37.4368 49.3863 38.231 49.8556C38.3755 49.9278 38.5199 49.9639 38.6643 49.9639H57.7978C58.2311 49.9639 58.5921 49.6751 58.7004 49.278C58.8087 48.8809 58.6282 48.4476 58.2671 48.231Z" />
+                    <path d="M20.1083 48.1228H0.938617V50H20.1083V48.1228Z" />
+                    <path
+                        d="M38.917 48.1228C31.444 43.7184 26.3538 32.13 21.8773 21.9134C18.0505 13.1769 14.5848 5.30687 10.0361 1.84116H24.0433C30.1805 1.84116 34.6209 11.9495 39.3141 22.6354C42.7437 30.4693 46.5343 39.0614 51.5884 44.9098C51.5884 44.9338 51.6005 44.9579 51.6245 44.982C51.6606 45.0181 51.6968 45.0181 51.7329 45.0542C52.7076 46.1733 53.7545 47.2202 54.8375 48.0867H38.917V48.1228Z" />
+                    <path
+                        d="M95.9928 48.231C95.3069 47.8339 94.657 47.4007 94.0433 46.8953C93.935 46.787 93.7906 46.7148 93.6823 46.6065C93.6462 46.6065 93.6462 46.5704 93.6101 46.5704C89.2419 43.0686 85.8845 36.7148 85.8845 36.7148C83.213 32.13 80.9025 26.8592 78.7365 21.9134C73.8628 10.8303 69.639 1.19134 63.0325 0.108304C62.5271 1.09741e-06 61.1552 0 61.1552 0H43.5018C43.5018 0 41.9856 1.09741e-06 41.6245 0.108304C39.3863 0.685922 37.7256 3.2852 37.7256 6.38989V9.8556C38.3393 11.0469 38.9531 12.3105 39.6029 13.6101V6.42599C39.6029 3.97112 40.9747 1.87726 42.5993 1.87726H42.7076C45.4152 1.91336 47.7617 3.89892 50 7.03971L51.2635 9.24187L52.3466 11.083L53.5018 13.0325C53.574 13.1769 53.6462 13.3213 53.7184 13.4657L54.3682 14.8014L55.2347 16.6426L55.4513 17.1119C55.9567 18.1949 56.426 19.278 56.9314 20.3971V25.9928V39.0253V44.7292C57.0397 44.8375 57.148 44.9097 57.2563 45.018L57.6534 45.3068C58.0505 45.6318 58.4476 45.8845 58.8087 46.1011V24.657C59.4585 26.1372 60.1444 27.6173 60.8303 29.0975C61.5162 30.5415 62.2022 31.9856 62.8881 33.3935L62.8159 33.3213C62.8159 33.3213 63.8267 35.5596 65.5957 38.4837C67.4729 41.6245 70.2527 45.4874 73.5379 48.231C73.574 48.2671 73.6101 48.3032 73.6462 48.3032H73.6101C74.3682 48.8809 75.1625 49.4224 75.9567 49.8917C76.1011 49.9639 76.2455 50 76.3899 50H95.5235C95.9567 50 96.3177 49.7112 96.426 49.3141C96.5343 48.8809 96.3538 48.4476 95.9928 48.231Z" />
+                    <path
+                        d="M76.5704 48.1228C69.0975 43.7184 64.0072 32.13 59.5307 21.9134C55.704 13.1769 52.2383 5.30687 47.6895 1.84116H61.6967C67.8339 1.84116 72.2744 11.9495 76.9675 22.6354C80.3971 30.4693 84.1877 39.0614 89.2419 44.9098C89.2419 44.9338 89.2539 44.9579 89.278 44.982C89.3141 45.0181 89.3502 45.0181 89.3863 45.0542C90.361 46.1733 91.4079 47.2202 92.491 48.0867H76.5704V48.1228Z" />
+                </svg>
 
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left">
-		</div>
-		<div class="loader-section section-right">
-			<div id="frame" class="frame">
-				<div class="dot-totk dot1-totk"></div>
-				<br>
-				<div class="dot-totk dot2-totk"></div>
-				<div class="dot-totk dot3-totk"></div>
-				<br>
-				<div class="dot-totk dot4-totk"></div>
-				<div class="dot-totk dot5-totk"></div>
-				<br>
-				<div class="dot-totk dot6-totk"></div>
-				<div class="dot-totk dot7-totk"></div>
-				<br>
-				<div class="dot-totk dot8-totk"></div>
-				<div class="dot-totk dot9-totk"></div>
-				<br>
-				<div class="dot-totk dot10-totk"></div>
-			</div>
-		</div>
-	</div>
+                <div class="intro-section">
+                    <div class="name-title">
+                        <h1 class="name">My name is Nicholas Menghini</h1>
+                        <div class="intro-text">
+                            <p>I'm the Senior Visual & UX/UI Designer building great things at <a
+                                    href="https://www.urbanbound.com/">UrbanBound</a>.</p>
+                            <p>Lover of type. Citizen of the world. Student for life.</p>
+                        </div>
+                    </div>
 
-	<article role="main" class="wrapper">
-		<section class="section section--header">
-			<div class="container">
-				<div class="row align-center">
-					<div class="col col-12">
-						<div class="picture"></div>
-						<h1 class="giga-header">
-							My name is Nicholas Menghini
-						</h1>
-						<p class="text-large">
-							I’m the Senior Visual & UX/UI Designer building great things at UrbanBound.</br>Lover of
-							type. Citizen of the world. Student for life.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<div class="content-container">
-					<div class="gutters row splice">
-						<div class="col col-6">
-							<h3>About me</h3>
-							<p>I am a passionate designer who enjoys exploring all creative graphic solutions for any
-								design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid
-								based sensibilities and a passion for
-								typography. I also nerd out on icon systems and create them in my free time.</p><br />
-							<p>I spent my formative years living and traveling abroad; leading to adventures rooted in
-								cultural exploration and experiencing different environments. It gives me a unique
-								cultural perspective that I try to impart
-								onto my design philosophy.</p>
-						</div>
-						<div class="col col-6">
-							<h3>Skills</h3>
-							<p>User Experience Design, User Interface Design, User Testing, Icon System Design, Layout
-								design, Brand Development & Logo Design, Creative Direction, Print Mediums</p>
-							<h3>Availability</h3>
-							<p>Available for Consulting</p>
-							<h3>Get in touch</h3>
-							<p>
-								<a href="mailto:nick.menghini@gmail.com" target="_blank"
-									class="links__link links__link--email">
-									<span aria-hidden="true" class="iconic iconic-envelope-open"></span>
-									<strong>nick.menghini</strong>@gmail.com
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <div class="about-skills">
+                        <div class="section">
+                            <h2>About me</h2>
+                            <p>I am a passionate designer who enjoys exploring all creative graphic solutions for any
+                                design issue. I lean towards a clean, minimal aesthetic. I have a soft spot for grid
+                                based sensibilities and a passion for typography. I also nerd out on icon systems and
+                                create them in my free time.</p>
+                        </div>
 
-		<section class="section">
-			<div class="container">
-				<div class="content-container">
-					<p>Pantone pick a year:</p>
-					<a id="2017" class="links__link">2017</a>
-					<a id="2018" class="links__link">2018</a>
-					<a id="2019" class="links__link">2019</a>
-					<a id="2020" class="links__link">2020</a>
-					<a id="2021" class="links__link">2021</a>
-					<a id="2022" class="links__link">2022</a>
-					<a id="2023" class="links__link">2023</a>
-					<a id="2024" class="links__link">2024</a>
-					<a id="2025" class="links__link">2025</a>
-				</div>
-			</div>
-		</section>
+                        <div class="section">
+                            <h2>Skills</h2>
+                            <p>User Experience Design, User Interface Design, User Testing, Icon System Design, Layout
+                                design, Brand Development & Logo Design, Creative Direction, Print Mediums</p>
+                        </div>
+                    </div>
+                </div>
 
-		<div class="push"></div>
+                <div class="links">
+                    <a href="mailto:nick.menghini@gmail.com" target="_blank">Email me</a>
+                    <a href="https://www.instagram.com/nl_menghini/" target="_blank">Snapshots & Timelapse</a>
+                    <a href="https://cottonbureau.com/people/nicholas-menghini" target="_blank">Threads</a>
+                    <a href="https://thenounproject.com/nl_menghini/" target="_blank">Icons</a>
+                </div>
+            </div>
 
-	</article>
-	<footer class="footer" role="contentinfo">
-		<div class="container">
-			<p class="footer__note footer__note--primary">© 2024 by
-				<span class="footer__title">Nicholas Menghini. I like creating cool stuff.</span>
-			</p>
-			<p class="footer__note footer__note--secondary">No animals were harmed in making of this site.
-			</p>
-		</div>
-	</footer>
-	<script src="build/scripts/jquery.js"></script>
-	<script src="build/scripts/kube.min.js"></script>
-	<script src="build/scripts/modernizr.js"></script>
-	<script src="build/scripts/iconic.min.js"></script>
-	<script src="build/scripts/jquery.mixitup.min.js"></script>
-	<script src="build/scripts/color-changer.js"></script>
-	<script>
-		//scroller
-		$("nav").find("a").click(function (e) {
-			var section = $(this).attr("href");
-			$("html, body").animate({
-				scrollTop: $(section).offset().top - 80
-			});
-		});
+            <div class="footer">
+                <p>© 2025 by Nicholas Menghini. I like creating cool stuff.</p>
+                <p>No animals were harmed in making of this site.</p>
+            </div>
+        </div>
 
-		//loader fadeout
-		$(document).ready(function () {
-			setTimeout(function () {
-				$('body').addClass('loaded');
-			}, 3000);
-			setTimeout(function () {
-				document.getElementById('frame').className = 'frame hidden';
-			}, 2900);
-		});
+        <div class="pantone-panel">
+            <div class="pantone-box">
+                <h2>Pantone pick a year</h2>
+                <div class="pantone-years">
+                    <p><a id="2025" class="links__link">2025</a></p>
+                    <p><a id="2024" class="links__link">2024</a></p>
+                    <p><a id="2023" class="links__link">2023</a></p>
+                    <p><a id="2022" class="links__link">2022</a></p>
+                    <p><a id="2021" class="links__link">2021</a></p>
+                    <p><a id="2020" class="links__link">2020</a></p>
+                    <p><a id="2019" class="links__link">2019</a></p>
+                    <p><a id="2018" class="links__link">2018</a></p>
+                    <p><a id="2017" class="links__link">2017</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		$(function () {
-			var $window = $(window)
-			var $h1 = $('.header__intro h1')
-			var $res = $('.res')
-			var $size = $('.size')
-
-			$window.on('resize', function (data) {
-				$res.text($window.width())
-				$size.text($h1.css('fontSize'))
-			}).trigger('resize')
-		})
-
-		$('#reporting-modal').modal('setWidth', '90%');
-
-		//refresh page
-		function refreshPage() {
-			window.location.reload();
-		}
-
-	</script>
+    <script src="scripts/color-changer.min.js"></script>
+    <script>
+        function refreshPage() {
+            window.location.reload();
+        }
+    </script>
 </body>
 
 </html>
